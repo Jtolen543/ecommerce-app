@@ -58,7 +58,7 @@ class Command(BaseCommand):
                     category.save()
                     category_count += 1
 
-        with open(fr"{data_path}\products.csv", mode="r") as file:
+        with open(fr"{data_path}/products.csv", mode="r") as file:
             reader = csv.DictReader(file)
             for row in reader:
                 if not Product.objects.filter(name=row['name']).exists():
