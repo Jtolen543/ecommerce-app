@@ -30,7 +30,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, "my_app/static")
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get("DJANGO_FORM_KEY")
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["98.81.140.228", "192.168.167.22", "127.0.0.1", "172.31.17.204"]
 
