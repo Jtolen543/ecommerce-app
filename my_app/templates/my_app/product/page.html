@@ -1,0 +1,81 @@
+{% include 'my_app/base/header.html' %}
+{% load widget_tweaks %}
+
+<body class="bg-light">
+  <main class="container my-5">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <img src="{{ product.image }}" alt="{{ product.name }}" class="img-fluid product-image-focused">
+            </div>
+            <div class="col-md-6">
+                <h1 class="mb-3">{{ product.name }}</h1>
+                <h2 class="h4 mb-3">${{ product.price }}</h2>
+                <p class="mb-4">{{ product.description }}</p>
+
+                <div class="mb-4">
+                    <h3 class="h5">Category</h3>
+                    <span class="badge bg-secondary">{{ product.category.type }}</span>
+                </div>
+
+                <div class="mb-4">
+                    <h3 class="h5">Stock</h3>
+                    <p>{{ product.stock }}</p>
+                </div>
+                <form action="{% url 'product' product.name %}" method="post">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="quantity" class="form-label fw-bold">Quantity</label>
+                        <input type="number" class="form-control" id="quantity" name="quantity" min="1" max="{{ product.stock }}" value="1">
+                    </div>
+                    {% for message in messages %}
+                        <div class="text-danger fw-bold">{{ message }}</div>
+                    {% endfor %}
+                    <button type="submit" class="btn btn-primary btn-lg">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+
+<!--        <div class="row mt-5">-->
+<!--            <div class="col-12">-->
+<!--                <h3 class="mb-4">Product Details</h3>-->
+<!--                <table class="table">-->
+<!--                    <tbody>-->
+<!--                        <tr>-->
+<!--                            <th scope="row">Material</th>-->
+<!--                            <td>100% Cotton</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <th scope="row">Care Instructions</th>-->
+<!--                            <td>Machine wash cold, tumble dry low</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <th scope="row">Country of Origin</th>-->
+<!--                            <td>Made in USA</td>-->
+<!--                        </tr>-->
+<!--                    </tbody>-->
+<!--                </table>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="row mt-5">-->
+<!--            <div class="col-12">-->
+<!--                <h3 class="mb-4">Customer Reviews</h3>-->
+<!--                <div class="card mb-3">-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-title">Great product!</h5>-->
+<!--                        <p class="card-text">This t-shirt is exactly what I was looking for. The quality is excellent and it fits perfectly.</p>-->
+<!--                        <p class="card-text"><small class="text-muted">Posted by John D. on May 15, 2023</small></p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="card mb-3">-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-title">Comfortable and stylish</h5>-->
+<!--                        <p class="card-text">I love the design and the fabric is so soft. Definitely recommend!</p>-->
+<!--                        <p class="card-text"><small class="text-muted">Posted by Sarah M. on June 2, 2023</small></p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+    </main>
+
+{% include 'my_app/base/footer.html' %}

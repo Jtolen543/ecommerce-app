@@ -1,0 +1,39 @@
+{% include 'my_app/base/header.html' %}
+{% load widget_tweaks %}
+  <body class="d-flex flex-column justify-content-between bg-light">
+    <div class="container bg-white p-4 p-md-5 mb-4 rounded shadow-sm fw-bold text-black col-12 col-md-10 col-lg-4">
+      <div class="fs-3 text-center my-3">Add Product</div>
+      <div class="fs-6 text-center my-3">Add a product to the catalog</div>
+
+      {% for message in messages %}
+          <div class="text-danger"> {{ message }} </div>
+      {% endfor %}
+
+      <form method="post" action="{% url 'edit_product' product_id %}" enctype="multipart/form-data">
+        {%  csrf_token  %}
+
+        <div class="form-label fw-bold">{{ form.name.label }}</div>
+        {% render_field form.name class+='form-control' %}
+
+        <div class="form-label fw-bold">{{ form.category.label }}</div>
+        {% render_field form.category class+='form-control' %}
+
+        <div class="form-label fw-bold">{{ form.description.label }}</div>
+        {% render_field form.description class+='form-control' %}
+
+        <div class="form-label fw-bold">{{ form.price.label }}</div>
+        {% render_field form.price class+='form-control' %}
+
+        <div class="form-label fw-bold">{{ form.stock.label }}</div>
+        {% render_field form.stock class+='form-control' %}
+
+        <div class="form-label fw-bold">{{ form.image.label }}</div>
+        {% render_field form.image class+='form-control' %}
+
+        <div class="form-label fw-bold">{{ form.is_active.label }}</div>
+        {% render_field form.is_active %}
+
+        <div class="text-center"><button type="submit" class="form-control btn btn-primary my-2 w-50">Add Product</button></div>
+      </form>
+    </div>
+{% include 'my_app/base/footer.html' %}

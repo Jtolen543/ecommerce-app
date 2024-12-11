@@ -1,0 +1,28 @@
+{% include 'my_app/base/header.html' %}
+{% load static %}
+{% load widget_tweaks %}
+<body class="container">
+    <div class="fw-bold fs-2 my-5 pt-5">Sign in for faster checkout</div>
+    <div class="d-flex gap-3 mb-5 pb-5">
+          <div class="offset-2 col-4 pe-3 border-end">
+            <div class="fw-bold fs-3">Have an Account?</div>
+            <form method="post" action="{% url 'session_checkout' %}">
+                {% csrf_token %}
+                {% for field in form %}
+                    <div class="form-group">
+                        <div class="form-label">{{ field.label }}</div>
+                        {% render_field field class+='form-control' %}
+                    </div>
+                {% endfor %}
+                <div class="text-center"><button class="btn btn-primary my-3 w-100">Login</button></div>
+            </form>
+            <a href="{% url 'reset_password' %}" class="text-decoration-none fw-bold">Forgot Username or Password?</a>
+          </div>
+          <div class="col-4 text-wrap">
+            <div class="fs-3 fw-bold mb-1">Guest Checkout</div>
+            <div>You can check out without creating an account. You'll have a chance to create an account later</div>
+            <div class="text-center"><a class="btn btn-dark mt-3 w-100" href="{% url 'confirm_checkout' %}">Continue as guest</a></div>
+          </div>
+    </div>
+
+{% include 'my_app/base/footer.html' %}

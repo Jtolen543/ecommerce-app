@@ -1,0 +1,104 @@
+{% extends 'my_app/profile/profile.html' %}
+{% load widget_tweaks %}
+
+{% block content %}
+<style>
+    .delete-icon {
+        font-size: 3rem;
+        color: #dc3545;
+    }
+    .form-check-input:checked ~ .form-check-label {
+        text-decoration: line-through;
+    }
+</style>
+<meta name="csrf-token" content="{{ csrf_token }}">
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card border-danger">
+                <div class="card-body text-center">
+                    <i class="bi bi-exclamation-triangle delete-icon mb-4"></i>
+                    <h2 class="card-title mb-4">Delete Your Account</h2>
+                    <p class="card-text mb-4">We're sorry to see you go. Please read the following information carefully before proceeding with account deletion.</p>
+
+                    <div class="alert alert-warning" role="alert">
+                        <h4 class="alert-heading">Warning!</h4>
+                        <p>Deleting your account is permanent and cannot be undone. All your data, including order history and saved preferences, will be permanently removed.</p>
+                    </div>
+
+                    <form id="deleteAccountForm" method="post" action="{% url 'validate_user_delete' %}">
+                        {% csrf_token %}
+                        <div class="mb-4">
+                            <h5>Please confirm that you understand the following:</h5>
+                            <div class="form-check text-start">
+                                <input class="form-check-input" type="checkbox" id="confirmDelete1" required>
+                                <label class="form-check-label" for="confirmDelete1">
+                                    My account and all associated data will be permanently deleted.
+                                </label>
+                            </div>
+                            <div class="form-check text-start">
+                                <input class="form-check-input" type="checkbox" id="confirmDelete2" required>
+                                <label class="form-check-label" for="confirmDelete2">
+                                    I will lose access to my order history and any store credits or rewards.
+                                </label>
+                            </div>
+                            <div class="form-check text-start">
+                                <input class="form-check-input" type="checkbox" id="confirmDelete3" required>
+                                <label class="form-check-label" for="confirmDelete3">
+                                    This action cannot be reversed once completed.
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="deleteReason" class="form-label">Please tell us why you're leaving (optional):</label>
+                            <select class="form-select" id="deleteReason">
+                                <option value="">Select a reason</option>
+                                <option value="not_useful">I don't find the service useful anymore</option>
+                                <option value="too_expensive">The services/items are too expensive</option>
+                                <option value="privacy_concerns">I have privacy concerns</option>
+                                <option value="poor_experience">I had a poor customer experience</option>
+                                <option value="other">Other reasons</option>
+                            </select>
+                        </div>
+                        <script>
+
+                        </script>
+
+                        <div class="mb-1">
+                            <label for="currentPassword" class="form-label">Enter your current password to confirm:</label>
+                            <input type="password" class="form-control" id="currentPassword" required>
+                        </div>
+
+                        <div class="text-danger fw-bold fs-5 mb-2" id="passwordError"></div>
+
+                        <button type="submit" class="btn btn-danger btn-lg">Permanently Delete My Account</button>
+                    </form>
+
+                    <div class="mt-4">
+                        <a href="{% url 'profile' %}" class="btn btn-primary">Cancel and return to my account</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Confirmation Modal -->
+<div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmationModalLabel">Final Confirmation</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Are you absolutely sure you want to delete your account? This action cannot be undone.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <a type="button" class="btn btn-danger" href="{% url 'delete_user_account' %}">Yes, Delete My Account</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

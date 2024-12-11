@@ -1,0 +1,199 @@
+{% include 'my_app/base/header.html' %}
+{% load static %}
+{% load widget_tweaks %}
+{% load mathfilters %}
+{% load crispy_forms_filters %}
+
+<meta name="csrf-token" content="{{ csrf_token }}">
+<script src="{% static 'my_app/js/confirm_payment.js' %}" defer></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<body class="d-flex flex-column justify-content-between">
+<div class="bg-light py-3 py-md-5">
+  <div class="container">
+    <div class="col-12">
+      <div class="bg-white p-4 p-md-5 rounded shadow-sm">
+        <div class="row">
+          <div class="col-12">
+            <div class="mb-5">
+              <h2 class="h3">Check Out</h2>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column align-items-center mb-3">
+          <div class="col-12 col-md-4 d-flex flex-column align-items-center">
+            <label for="stripe_email" class="form-label fw-bold fs-4">Email Address</label>
+            <input type="email" name="stripe_email" id="stripe_email" class="form-control col-12 col-md-4"
+                 style="text-align: center;" {% if user.is_authenticated %} value="{{ user.email }}"{% endif %} required
+            >
+          </div>
+        </div>
+        {% if user.is_authenticated %}
+<!--   Shipping Address Form     -->
+        <div class="h5 border-bottom d-flex flex-column" id="address-options">
+          <div class="d-flex justify-content-between">
+            <div class="mb-3 pb-2 col-4">1. Select Shipping Address</div>
+            <div class="text-muted fs-6 d-flex flex-column mb-2 col-4">
+              <div id="default-name" class="text-dark text-wrap">{{ default.name }}</div>
+              <div id="default-address">{{ default.address }}</div>
+              <div id="default-locale">{{ default.locale }}</div>
+            </div>
+            <button class="mb-3 pb-2 btn btn-primary btn-sm col-4" style="height: 2.5em; width: 5em;" id="address-button">Change</button>
+          </div>
+          <div id="address-select" class="px-2">
+            {% for choice in address_form.locations.field.choices %}
+            <div class="form-check mb-3">
+              <input
+                type="radio"
+                class="form-check-input"
+                name="locations"
+                id="{{ address_form.locations.id_for_label }}_{{ forloop.counter }}"
+                value="{{ choice.0 }}"
+                {% if address_form.locations.value == choice.0 %}checked{% endif %}
+              >
+              <label class="form-check-label fw-normal fs-6" for="{{ address_form.locations.id_for_label }}_{{ forloop.counter }}">
+                {{ choice.1 }}
+              </label>
+            </div>
+            {% endfor %}
+<!--         New Address Form   -->
+            <button class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#newAddressModal">Add a new delivery address</button>
+            <div class="modal fade" id="newAddressModal" tabindex="-1" aria-labelledby="addressLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="addressLabel">Add Shipping Address</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form id="addressForm" action="{% url 'confirm_checkout' %}" method="post">
+                      {% csrf_token %}
+                      {{ form|crispy }}
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" form="addressForm" class="btn btn-primary">Add Address</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+<!--    Payment Options Form    -->
+        <div class="h5 border-bottom" id="payment-options">
+          <div class="d-flex justify-content-between">
+            <div class="mb-3 pb-2 col-4">2. Select Payment Option</div>
+            <div class="text-muted fs-6 d-flex flex-column mb-2 col-4">
+              <div id="default-payment-name" class="text-dark"></div>
+              <div id="default-payment" class="text-dark"></div>
+              <div id="default-billing-address"></div>
+              <div id="default-billing-locale"></div>
+            </div>
+            <button class="mb-3 pb-2 btn btn-primary btn-sm col-4" style="height: 2.5em; width: 5em;" id="payment-button">Change</button>
+          </div>
+          <div class="d-flex px-2 ps-4 gap-2 mb-2 pb-2" id="payment-table">
+            <div class="fw-bold text-muted col-6">Your Payment Options</div>
+            <div class="d-flex text-muted col-3 fs-6">Name on Card</div>
+            <div class="d-flex text-muted col-3 fs-6">Expires on</div>
+          </div>
+          <div id="payment-select" class="d-flex flex-column">
+            {% for payment in payments %}
+            <div class="px-2 py-2 fs-6 d-flex gap-2">
+              <input type="radio" class="form-check-input" name="payments" id="{{ payment.id }}" value="{{ payment.id }}">
+              <label class="form-check-label d-flex flex-grow-1 gap-2" for="{{ payment.id }}">
+                  <span class="fw-bold col-6 flex"><img src="{{ payment.image }}" class="me-2" width="25" height="25">{{ payment.type }} ending in {{ payment.last4 }}</span>
+                  <span class="fw-normal col-3">{{ payment.name }}</span>
+                  <span class="fw-normal col-3">{{ payment.exp_date }}</span>
+              </label>
+            </div>
+            {% endfor %}
+            <button class="btn btn-primary mb-2 col-12 col-md-4" id="openStripePayment">Use a different payment method</button>
+          </div>
+        </div>
+        {% endif %}
+<!--   Should only activate payment container if the user does not want to use their saved payments       -->
+
+<!--    Review Items Form      -->
+        <div class="h5 border-bottom pb-2" id="review-items">
+          <div class="d-flex flex-column">
+            {% if user.is_authenticated %}<div class="mb-3">3. Review Items</div>
+            {% else %} <div class="mb-3">Review Items</div>
+            {% endif %}
+<!--        Products    -->
+            <div class="d-flex flex-column flex-md-row">
+              <div class="d-flex flex-column gap-4 col-12 col-md-6">
+              {% for product in products %}
+                <div>
+                  <div class="card mb-3" style="max-width: 540px; border: none;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="{{ product.image }}" class="img-fluid rounded-start">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <div class="card-title fs-5">{{ product.name }}</div>
+                          <p class="card-text fs-6">{{ product.description }}</p>
+                          <div class="d-flex mb-2">
+                            <input type="number" class="form-control" style="width: 5em;" min="1" max="{{ product.stock }}" value="{{ product.quantity }}" onchange="onCartChange(this, '{{ product.name }}')">
+                          </div>
+                          <p class="card-text"><small class="text-muted">${{ product.price }}</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              {% endfor %}
+  <!--         End of Products     -->
+              </div>
+  <!--         Price Total     -->
+              <div class="d-flex flex-column px-2 gap-2 fs-4 col-12 col-md-6">
+                <div class="fw-bold border-bottom fs-4 pb-2">Order Summary</div>
+                <div class="d-flex justify-content-between fs-5">
+                  <div>Subtotal: </div>
+                  <div id="subtotal">${{ subtotal|floatformat:2 }}</div>
+                </div>
+                <div class="d-flex justify-content-between fs-5">
+                  <div>Shipping and Handling:</div>
+                  <div id="shipping">${{ shipping|floatformat:2 }}</div>
+                </div>
+                <div class="d-flex justify-content-between fs-5">
+                  <div>Tax:</div>
+                  <div id="tax">${{ tax|floatformat:2 }}</div>
+                </div>
+                <div class="d-flex justify-content-between fs-5 pt-2 border-top">
+                  <div>Total: </div>
+                  <div id="total">${{ total|floatformat:2 }}</div>
+                </div>
+<!--             Only show when guest or customer wants to pay with card not stored yet   -->
+                <div class="payment-container mt-5 {% if user.is_authenticated %}d-none{% endif %}" id="payment-container">
+                  <form id="payment-form">
+                    <div id="payment-element"></div>
+                    <div id="address-element"></div>
+                    <div class="text-center"><button type="submit" id="submit-button" class="btn btn-primary mt-3 w-50 justify-self-center">Complete Order</button></div>
+                    <div id="payment-message" class="hidden fw-bold text-danger fs-6"></div>
+                  </form>
+<!--            Payment Button with Payment Intent, hide when "pay with new method is selected"      -->
+                </div>
+                <a id="express-checkout-btn" class="btn btn-primary mt-2 disabled">Complete Order</a>
+                <div id="express-checkout-warning" class="text-warning fw-bold fs-4"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <hr class="mt-5 border-secondary-subtle">
+            <div class="d-flex gap-4 justify-content-end">
+              <a href="{% url 'shop_cart' %}" class="btn btn-dark">Back to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% include 'my_app/base/footer.html' %}
+

@@ -1,0 +1,331 @@
+name,description,price,stock,category
+NZXT H7 Flow,"Mid-tower case with excellent airflow, precision design, and sturdy construction.",129.99,93,Case
+Corsair 3500X ARGB,Mid-tower case featuring vibrant ARGB lighting and efficient cooling options.,89.99,48,Case
+SilverStone Fara 514X,Mid-tower case with a sleek design and ample cooling support.,99.99,59,Case
+Montech Air 903 Base,Budget-friendly mid-tower case offering solid airflow and build quality.,64.99,68,Case
+Thermaltake View 270 TG ARGB Matcha Green,Mid-tower case with a distinctive color scheme and ARGB lighting.,79.99,62,Case
+Lian Li O11 Dynamic EVO,Mid-tower case known for its modular design and excellent cooling support.,225.99,54,Case
+NZXT H710i,Mid-tower case with smart device integration and a clean aesthetic.,169.99,23,Case
+Phanteks Eclipse P500A,Mid-tower case with high airflow design and easy cable management.,99.99,95,Case
+Cooler Master MasterCase H500,Mid-tower case featuring two large front fans and a mesh front panel for optimal airflow.,149.99,29,Case
+Fractal Design Meshify C,Mid-tower case with a unique angular mesh front panel for enhanced airflow.,89.99,95,Case
+Lian Li PC-O11 Dynamic,"Mid-tower case designed in collaboration with Razer, featuring RGB lighting and tempered glass panels.",139.99,99,Case
+NZXT H510 Elite,Mid-tower case with a minimalist design and tempered glass front and side panels.,149.99,79,Case
+Corsair 4000D Airflow,Mid-tower case optimized for airflow with a perforated front panel.,94.99,59,Case
+Fractal Design Define R6,Mid-tower case focused on silent operation with modularity and high-quality materials.,129.99,55,Case
+Lian Li Lancool II Mesh,Mid-tower case with mesh front panel and hinged tempered glass side panels.,89.99,44,Case
+Fractal Design Pop XL Silent,Full-tower case designed for quiet operation with sound-dampening materials.,99.99,86,Case
+Be Quiet Shadow Base 800 DX,Full-tower case optimized for extreme liquid cooling setups.,141.99,39,Case
+Asus ProArt PA602,Full-tower case tailored for professional workstation builds.,274.99,33,Case
+Fractal Design North XL,Full-tower case featuring a unique wood-accented front panel.,179.99,86,Case
+Thermaltake Core P8,"Full-tower case with an open-frame design, ideal for showcasing custom builds.",199.99,68,Case
+Phanteks Enthoo Pro 2,Full-tower case offering extensive cooling options and support for large motherboards.,139.99,47,Case
+Cooler Master Cosmos C700P,"Full-tower case with a premium design, RGB lighting, and versatile layout options.",299.99,98,Case
+Thermaltake Level 20 XT,Cube-style full-tower case with a panoramic view and modular design.,249.99,48,Case
+NZXT H1 V2,"Compact vertical case with a built-in AIO cooler and PSU, ideal for small form factor builds.",349.99,96,Case
+Corsair 7000D Airflow,Full-tower case with a focus on airflow and extensive cooling support.,259.99,96,Case
+Phanteks Evolv X,Full-tower case with premium build quality and dual-system capability.,229.99,38,Case
+Thermaltake View 71,Full-tower case with tempered glass panels and support for advanced cooling setups.,199.99,73,Case
+Cooler Master HAF 700 EVO,Full-tower case offering high airflow and compatibility with large cooling systems.,399.99,93,Case
+Lian Li V3000 Plus,Full-tower case with extensive modularity and support for dual-system builds.,499.99,83,Case
+Fractal Design Define XL R2,Full-tower case with sound-dampening panels for quiet operation and flexible layout options.,179.99,81,Case
+Noctua NH-D15,"High-performance dual-tower air cooler with two NF-A15 140mm fans, known for its exceptional cooling and low noise levels.",99.99,46,Cooling System
+Cooler Master Hyper 212 Black Edition,"Popular air cooler featuring a sleek black design, stacked fin array, and a 120mm PWM fan for efficient cooling.",39.99,71,Cooling System
+be quiet! Dark Rock Pro 4,Premium air cooler with virtually inaudible Silent Wings fans and a dual-tower layout for high cooling performance.,89.99,53,Cooling System
+Cryorig H7,"Compact air cooler with a slim profile, delivering excellent performance and compatibility with most cases.",49.99,49,Cooling System
+Scythe Mugen 5 Rev.B,"Air cooler offering a balance of performance and quiet operation, featuring a Kaze Flex 120mm PWM fan.",54.99,26,Cooling System
+DeepCool Assassin III,High-end air cooler with dual 140mm fans and a mirror-finished base for optimal heat dissipation.,89.99,78,Cooling System
+Thermalright Macho Rev.C,"Air cooler known for its large heatsink and low noise levels, suitable for overclocked systems.",59.99,58,Cooling System
+Arctic Freezer 34 eSports DUO,Budget-friendly air cooler with dual fans and optimized heat sink design for efficient cooling.,39.99,62,Cooling System
+Noctua NH-U12S,"Slim air cooler with a 120mm fan, offering excellent compatibility and reliable performance.",69.99,76,Cooling System
+be quiet! Pure Rock 2,"Entry-level air cooler with a 120mm Pure Wings 2 fan, providing quiet and effective cooling.",39.99,26,Cooling System
+Cooler Master MasterAir MA410M,Air cooler featuring addressable RGB lighting and Continuous Direct Contact Technology 2.0 for improved heat dissipation.,59.99,44,Cooling System
+Scythe Fuma 2,"Dual-tower air cooler with two Kaze Flex 120mm fans, offering high performance in a compact design.",59.99,42,Cooling System
+Thermalright Le Grand Macho RT,"Large air cooler with a low-speed 140mm fan, designed for silent operation and high cooling efficiency.",69.99,37,Cooling System
+DeepCool Gammaxx 400,Affordable air cooler with a 120mm PWM fan and four heat pipes for effective cooling.,29.99,93,Cooling System
+Arctic Freezer 50,Dual-tower air cooler with two 120mm fans and customizable RGB lighting for high-performance cooling.,74.99,55,Cooling System
+Corsair H100i RGB Platinum,240mm liquid cooler with vibrant RGB lighting and two ML120 PWM fans for efficient cooling.,159.99,45,Cooling System
+NZXT Kraken X63,280mm liquid cooler featuring a customizable RGB infinity mirror design and CAM software integration.,149.99,49,Cooling System
+Cooler Master MasterLiquid ML240L RGB,240mm liquid cooler with dual-chamber pump and RGB lighting on both the fans and pump.,99.99,68,Cooling System
+EVGA CLC 280mm Liquid CPU Cooler,"280mm liquid cooler with RGB LED and two 140mm fans, offering robust cooling performance.",129.99,61,Cooling System
+Thermaltake TH360 ARGB Sync,360mm liquid cooler with three 120mm ARGB fans and a high-performance water block.,139.99,77,Cooling System
+Corsair iCUE H150i Elite Capellix,360mm liquid cooler with dynamic RGB lighting and three ML120 RGB PWM fans for superior cooling.,179.99,53,Cooling System
+NZXT Kraken Z73,360mm liquid cooler featuring a customizable LCD display and high-performance fans.,249.99,94,Cooling System
+Cooler Master MasterLiquid ML360R RGB,360mm liquid cooler with addressable RGB lighting and a dual-chamber pump for enhanced performance.,149.99,38,Cooling System
+EVGA CLC 360mm Liquid CPU Cooler,"360mm liquid cooler with RGB LED and three 120mm fans, designed for efficient cooling.",139.99,54,Cooling System
+Thermaltake Floe Triple Riing RGB 360 TT Premium Edition,360mm liquid cooler with three 120mm RGB fans and a high-performance pump for demanding systems.,199.99,35,Cooling System
+DeepCool Castle 360EX,360mm liquid cooler with customizable RGB lighting and anti-leak technology.,159.99,100,Cooling System
+Arctic Liquid Freezer II 280,280mm liquid cooler with high static pressure fans and a maintenance-free pump.,129.99,66,Cooling System
+Asus ROG Ryujin II 360,360mm liquid cooler with an embedded 3.5-inch LCD display and optimized cooling performance.,249.99,58,Cooling System
+MSI MAG CoreLiquid 240R,240mm liquid cooler with ARGB lighting and a unique pump-in-radiator design.,109.99,53,Cooling System
+Lian Li Galahad 360,360mm liquid cooler with triple 120mm fans and customizable RGB lighting.,179.99,72,Cooling System
+AMD Ryzen 9 9950X,"16-core, 32-thread processor with a base clock of 4.3 GHz",649.99,86,CPU
+AMD Ryzen 9 9900X,"12-core, 24-thread processor with a base clock of 4.4 GHz",499.99,77,CPU
+AMD Ryzen 7 9800X3D,"8-core, 16-thread processor featuring 3D V-Cache technology",479.99,45,CPU
+AMD Ryzen 7 9700X,"8-core, 16-thread processor with a base clock of 3.8 GHz",359.99,23,CPU
+AMD Ryzen 5 9600X,"6-core, 12-thread processor with a base clock of 3.9 GHz",279.99,67,CPU
+AMD Ryzen 9 7950X3D,"16-core, 32-thread processor with 3D V-Cache technology",618.99,56,CPU
+AMD Ryzen 9 7950X,"16-core, 32-thread processor with a base clock of 4.5 GHz",477.99,31,CPU
+AMD Ryzen 9 7900X3D,"12-core, 24-thread processor with 3D V-Cache technology",568.99,41,CPU
+AMD Ryzen 9 7900X,"12-core, 24-thread processor with a base clock of 4.7 GHz",360.99,42,CPU
+AMD Ryzen 9 7900,"12-core, 24-thread processor with a base clock of 3.7 GHz",414.99,51,CPU
+AMD Ryzen 7 7800X3D,"8-core, 16-thread processor with 3D V-Cache technology",458.99,35,CPU
+AMD Ryzen 7 7700X,"8-core, 16-thread processor with a base clock of 4.5 GHz",267.99,37,CPU
+AMD Ryzen 7 7700,"8-core, 16-thread processor with a base clock of 3.8 GHz",280.99,37,CPU
+AMD Ryzen 5 7600X,"6-core, 12-thread processor with a base clock of 4.7 GHz",206.99,50,CPU
+AMD Ryzen 5 7600,"6-core, 12-thread processor with a base clock of 3.8 GHz",197.99,31,CPU
+Intel Core Ultra 9 285K,"24-core, 32-thread processor with a boost clock of 5.7 GHz",589.99,80,CPU
+Intel Core Ultra 7 265K,"20-core, 28-thread processor for high-performance computing",499.99,28,CPU
+Intel Core Ultra 5 245K,"16-core, 24-thread processor balancing performance and efficiency",399.99,32,CPU
+Intel Core i9-14900K,"24-core, 32-thread processor with a boost clock of 5.8 GHz",438.99,24,CPU
+Intel Core i7-14700K,"20-core, 28-thread processor with a boost clock of 5.6 GHz",347.99,48,CPU
+Intel Core i5-14600K,"14-core, 20-thread processor with a boost clock of 5.3 GHz",259.99,44,CPU
+Intel Core i9-13900K,"24-core, 32-thread processor with a boost clock of 5.8 GHz",401.99,70,CPU
+Intel Core i7-13700K,"16-core, 24-thread processor with a boost clock of 5.4 GHz",273.99,81,CPU
+Intel Core i5-13600K,"14-core, 20-thread processor with a boost clock of 5.1 GHz",227.99,55,CPU
+Intel Core i5-13400F,"10-core, 16-thread processor with a boost clock of 4.6 GHz",162.99,84,CPU
+Intel Core i3-13100,"4-core, 8-thread processor with a boost clock of 4.5 GHz",134.99,46,CPU
+Intel Core i9-12900K,"16-core, 24-thread processor with a boost clock of 5.2 GHz",599.99,20,CPU
+Intel Core i7-12700K,"12-core, 20-thread processor with a boost clock of 5.0 GHz",379.99,58,CPU
+Intel Core i5-12600K,"10-core, 16-thread processor with a boost clock of 4.9 GHz",239.99,42,CPU
+Intel Core i3-12100,"4-core, 8-thread processor with a boost clock of 4.3 GHz",122.99,88,CPU
+AMD Radeon RX 7900 XTX,"High-end GPU with 24GB GDDR6 memory, designed for 4K gaming and content creation.",999.99,62,GPU
+AMD Radeon RX 7900 XT,"Features 20GB GDDR6 memory, offering excellent performance for high-resolution gaming.",899.99,73,GPU
+AMD Radeon RX 7800 XT,"Equipped with 16GB GDDR6 memory, suitable for 1440p gaming with high frame rates.",469.99,78,GPU
+AMD Radeon RX 7700 XT,"Comes with 12GB GDDR6 memory, ideal for 1440p gaming and VR experiences.",419.99,23,GPU
+AMD Radeon RX 7600,"Offers 8GB GDDR6 memory, providing solid performance for 1080p gaming.",259.99,32,GPU
+AMD Radeon RX 6750 XT,"Mid-range GPU with 12GB GDDR6 memory, designed for 1440p gaming at high settings.",349.99,50,GPU
+AMD Radeon RX 6700 XT,"Features 12GB GDDR6 memory, suitable for high-frame-rate 1440p gaming.",329.99,80,GPU
+AMD Radeon RX 6600 XT,"Mid-range GPU with 8GB GDDR6 memory, ideal for 1080p gaming at high settings.",239.99,54,GPU
+AMD Radeon RX 6600,"Offers 8GB GDDR6 memory, providing solid performance for 1080p gaming.",199.99,41,GPU
+AMD Radeon RX 6500 XT,"Entry-level GPU with 4GB GDDR6 memory, suitable for casual gaming and multimedia tasks.",169.99,86,GPU
+AMD Radeon RX 6400,"Features 4GB GDDR6 memory, ideal for basic gaming and everyday use.",149.99,53,GPU
+AMD Radeon RX 590,"Budget-friendly GPU with 8GB GDDR5 memory, designed for eSports and light gaming.",199.99,83,GPU
+AMD Radeon RX 580,"Comes with 8GB GDDR5 memory, suitable for entry-level gaming and multimedia.",179.99,77,GPU
+AMD Radeon RX 570,"Entry-level GPU with 4GB GDDR5 memory, ideal for basic gaming needs.",149.99,20,GPU
+AMD Radeon RX 560,"Features 4GB GDDR5 memory, suitable for everyday computing and light gaming.",129.99,41,GPU
+NVIDIA GeForce RTX 4090,"Flagship GPU with 24GB GDDR6X memory, delivering top-tier performance for 4K gaming and AI tasks.",1599.99,89,GPU
+NVIDIA GeForce RTX 4080,"High-end GPU featuring 16GB GDDR6X memory, ideal for high-resolution gaming and creative workloads.",1199.99,37,GPU
+NVIDIA GeForce RTX 4070 Ti,"Equipped with 12GB GDDR6X memory, offering excellent performance for 1440p gaming.",799.99,77,GPU
+NVIDIA GeForce RTX 4070,"Comes with 12GB GDDR6X memory, suitable for high-frame-rate 1440p gaming.",599.99,53,GPU
+NVIDIA GeForce RTX 4060 Ti,"Mid-range GPU with 8GB GDDR6 memory, designed for 1080p gaming at high settings.",399.99,94,GPU
+NVIDIA GeForce RTX 4060,"Offers 8GB GDDR6 memory, providing solid performance for 1080p gaming.",299.99,87,GPU
+NVIDIA GeForce RTX 4050 Ti,"Entry-level GPU with 6GB GDDR6 memory, suitable for casual gaming and multimedia tasks.",249.99,58,GPU
+NVIDIA GeForce RTX 4050,"Features 6GB GDDR6 memory, ideal for basic gaming and everyday use.",199.99,57,GPU
+NVIDIA GeForce RTX 4040 Ti,"Budget-friendly GPU with 4GB GDDR6 memory, designed for eSports and light gaming.",179.99,51,GPU
+NVIDIA GeForce RTX 4040,"Comes with 4GB GDDR6 memory, suitable for entry-level gaming and multimedia.",159.99,74,GPU
+NVIDIA GeForce RTX 4030 Ti,"Entry-level GPU with 4GB GDDR6 memory, suitable for basic gaming needs.",149.99,21,GPU
+NVIDIA GeForce RTX 4030,"Features 4GB GDDR6 memory, ideal for everyday computing and light gaming.",139.99,49,GPU
+NVIDIA GeForce RTX 4020 Ti,"Budget GPU with 4GB GDDR6 memory, designed for casual gaming.",129.99,61,GPU
+NVIDIA GeForce RTX 4020,"Comes with 4GB GDDR6 memory, ideal for basic multimedia tasks.",119.99,27,GPU
+NVIDIA GeForce RTX 4010,"Entry-level GPU with 4GB GDDR6 memory, providing efficient performance for everyday computing.",109.99,23,GPU
+Razer Pro Type Ultra,"Wireless mechanical keyboard with silent switches, white backlighting, and cushioned wrist rest, designed for productivity.",159.99,33,Keyboard
+Cherry KC 200 MX,"Wired mechanical keyboard featuring Cherry MX2A switches, slim design, and excellent typing feel.",89.99,46,Keyboard
+Razer BlackWidow V4 75%,"Wired mechanical gaming keyboard with customizable RGB lighting, programmable keys, and compact design.",169.99,50,Keyboard
+Alienware Pro Wireless Gaming Keyboard,"Wireless mechanical gaming keyboard with low latency, customizable lighting, and durable construction.",149.99,55,Keyboard
+Corsair K70 RGB Pro Mini Wireless,"Compact wireless mechanical keyboard with per-key RGB lighting, hot-swappable switches, and PBT keycaps.",179.99,77,Keyboard
+Satechi SM1 Slim Mechanical Backlit Bluetooth Keyboard,"Slim mechanical keyboard with Bluetooth connectivity, backlit keys, and Mac-specific layout.",99.99,59,Keyboard
+Kinesis Freestyle Edge RGB Split Mechanical Gaming Keyboard,Ergonomic split mechanical keyboard with customizable RGB lighting and programmable keys.,199.99,86,Keyboard
+Asus ROG Azoth,"Wireless mechanical keyboard with OLED display, customizable switches, and premium build quality.",199.99,59,Keyboard
+Keychron V6,"Wired mechanical keyboard with hot-swappable switches, customizable RGB lighting, and full-size layout.",89.99,78,Keyboard
+Cooler Master MK770,"Wired mechanical keyboard with gasket-mounted design, Kailh Box V2 switches, and customizable RGB lighting.",119.99,45,Keyboard
+Lemokey X1,"Budget-friendly wired mechanical keyboard with durable build, responsive switches, and compact design.",36.99,61,Keyboard
+Keychron Q1 HE,"Wireless mechanical keyboard with Hall effect switches, customizable RGB lighting, and premium build quality.",219.99,55,Keyboard
+Vulcan II TKL Pro,"Wired mechanical gaming keyboard with optical switches, customizable RGB lighting, and tenkeyless design.",159.99,97,Keyboard
+Corsair K65 Plus Wireless,"Wireless mechanical keyboard with Mac-specific keys, customizable functionality, and up to 266 hours of battery life.",179.99,24,Keyboard
+DS Pixel Keyboard,"Touchscreen keyboard that doubles as a second monitor, featuring a 60Hz touchscreen with 3,840 by 1,100-pixel resolution.",349.99,21,Keyboard
+Logitech MX Keys S,"Wireless membrane keyboard with smart illumination, comfortable typing experience, and multi-device connectivity.",109.99,64,Keyboard
+Logitech Signature K650,"Wireless membrane keyboard with quiet keys, long battery life, and integrated palm rest.",49.99,56,Keyboard
+Logitech Pebble Keys 2 K380s,Compact wireless membrane keyboard with multi-device pairing and slim design.,39.99,59,Keyboard
+Dell KB900 Premier Collaboration Keyboard,"Wireless keyboard with dedicated collaboration keys, slim profile, and seamless connectivity.",109.99,23,Keyboard
+Cherry Stream Keyboard,"Budget-friendly wired keyboard with quiet operation, durable build, and integrated palm rest.",40.99,46,Keyboard
+Logitech Wave Keys,"Wireless ergonomic membrane keyboard with a wave design, cushioned palm rest, and quiet keys.",59.99,37,Keyboard
+Logitech POP Icon Keys,"Wireless mechanical keyboard with customizable emoji keys, compact design, and multi-device connectivity.",49.99,81,Keyboard
+HP Slim Wireless Keyboard and Mouse Combo,Compact wireless membrane keyboard with a matching mouse for convenience.,39.99,37,Keyboard
+Microsoft Ergonomic Keyboard,Comfortable membrane keyboard with a split layout and cushioned palm rest.,59.99,51,Keyboard
+Razer Cynosa Chroma,Budget-friendly membrane gaming keyboard with customizable RGB lighting.,49.99,97,Keyboard
+HP Pavilion Wireless Keyboard,Wireless membrane keyboard with a compact design and quiet keys for home use.,39.99,34,Keyboard
+Dell Multimedia Keyboard-KB216,Affordable wired membrane keyboard with a full-size layout and quiet keys.,19.99,42,Keyboard
+Logitech K780 Multi-Device Wireless Keyboard,"Wireless keyboard with integrated cradle for phones and tablets, supporting multiple devices.",79.99,80,Keyboard
+Microsoft All-in-One Media Keyboard,Compact wireless membrane keyboard with a built-in trackpad for media control.,39.99,84,Keyboard
+HP 230 Wireless Keyboard,Compact and lightweight wireless keyboard with spill-resistant keys.,29.99,65,Keyboard
+Corsair Vengeance LPX 16GB (2 x 8GB) DDR4 3200MHz,"High-performance DDR4 memory kit with low-profile heat spreaders, ideal for space-constrained builds.",79.99,29,Memory
+G.Skill Ripjaws V Series 32GB (2 x 16GB) DDR4 3600MHz,"Optimized for Intel platforms, offering high speed and low latency for gaming and multitasking.",149.99,59,Memory
+Kingston FURY Beast 16GB (2 x 8GB) DDR4 3200MHz,Stylish black heat spreader design with Plug N Play automatic overclocking functionality.,74.99,44,Memory
+Crucial Ballistix 16GB (2 x 8GB) DDR4 3200MHz,Performance memory with modern design and customizable RGB lighting.,84.99,78,Memory
+TeamGroup T-Force Delta RGB 16GB (2 x 8GB) DDR4 3200MHz,Full-frame 120° RGB lighting with aluminum alloy heat spreader for efficient cooling.,89.99,61,Memory
+Patriot Viper Steel 16GB (2 x 8GB) DDR4 3200MHz,"High-performance memory with a sleek steel heat shield, designed for both Intel and AMD platforms.",79.99,26,Memory
+Corsair Dominator Platinum RGB 32GB (2 x 16GB) DDR4 3200MHz,Premium memory with dynamic multi-zone RGB lighting and superior performance.,199.99,98,Memory
+G.Skill Trident Z RGB 16GB (2 x 8GB) DDR4 3200MHz,Combines vibrant RGB lighting with uncompromised performance.,99.99,71,Memory
+Kingston HyperX Predator 16GB (2 x 8GB) DDR4 3200MHz,High-speed memory with aggressive styling and reliable performance.,89.99,99,Memory
+Crucial Ballistix MAX 16GB (2 x 8GB) DDR4 4000MHz,Engineered for maximum performance with a sleek black anodized aluminum heat spreader.,129.99,27,Memory
+TeamGroup T-Force Xtreem ARGB 16GB (2 x 8GB) DDR4 3600MHz,Mirror-finished design with full-screen light penetration and high-speed performance.,119.99,88,Memory
+Patriot Viper RGB 16GB (2 x 8GB) DDR4 3200MHz,Customizable RGB lighting with solid performance for gaming and multimedia.,94.99,99,Memory
+Corsair Vengeance RGB Pro 16GB (2 x 8GB) DDR4 3200MHz,Dynamic multi-zone RGB lighting with optimized performance for Intel and AMD platforms.,99.99,50,Memory
+G.Skill Ripjaws V Series 16GB (2 x 8GB) DDR4 3200MHz,Versatile performance memory suitable for a wide range of applications.,79.99,65,Memory
+Kingston FURY Renegade 16GB (2 x 8GB) DDR4 3600MHz,High-speed memory with aggressive styling and reliable performance.,89.99,88,Memory
+Crucial Ballistix 32GB (2 x 16GB) DDR4 3200MHz,High-performance memory with modern design and customizable RGB lighting.,159.99,43,Memory
+TeamGroup T-Force Vulcan Z 16GB (2 x 8GB) DDR4 3200MHz,"Simple design with solid performance, suitable for both Intel and AMD systems.",74.99,90,Memory
+Patriot Signature Line 16GB (2 x 8GB) DDR4 2666MHz,"Reliable performance at an affordable price point, ideal for everyday computing.",69.99,68,Memory
+Corsair Vengeance LPX 32GB (2 x 16GB) DDR4 3200MHz,"High-performance memory with low-profile heat spreaders, ideal for space-constrained builds.",149.99,87,Memory
+G.Skill Trident Z Neo 16GB (2 x 8GB) DDR4 3600MHz,Optimized for AMD Ryzen platforms with sleek dual-tone design and RGB lighting.,109.99,76,Memory
+Kingston FURY Beast 32GB (2 x 16GB) DDR4 3200MHz,Stylish black heat spreader design with Plug N Play automatic overclocking functionality.,149.99,79,Memory
+Crucial Ballistix MAX 32GB (2 x 16GB) DDR4 4000MHz,Engineered for maximum performance with a sleek black anodized aluminum heat spreader.,249.99,72,Memory
+TeamGroup T-Force Delta RGB 32GB (2 x 16GB) DDR4 3200MHz,Full-frame 120° RGB lighting with aluminum alloy heat spreader for efficient cooling.,169.99,41,Memory
+Patriot Viper Steel 32GB (2 x 16GB) DDR4 3200MHz,"High-performance memory with a sleek steel heat shield, designed for both Intel and AMD platforms.",159.99,78,Memory
+Corsair Dominator Platinum RGB 16GB (2 x 8GB) DDR4 3200MHz,Premium memory with dynamic multi-zone RGB lighting and superior performance.,129.99,39,Memory
+G.Skill Trident Z RGB 32GB (2 x 16GB) DDR4 3200MHz,Combines vibrant RGB lighting with uncompromised performance.,199.99,69,Memory
+Kingston HyperX Predator 32GB (2 x 16GB) DDR4 3200MHz,High-speed memory with aggressive styling and reliable performance.,179.99,45,Memory
+Crucial Ballistix 64GB (2 x 32GB) DDR4 3200MHz,High-performance memory with modern design and customizable RGB lighting.,299.99,41,Memory
+G.Skill Flare X5 Series 32GB (2x16GB) DDR5 6000Mhz,High-speed memory with aggressive styling and reliable performance.,86.99,57,Memory
+G.Skill Flare X5 Series 16GB (2x8GB) DDR5 6000Mhz,High-speed memory with aggressive styling and reliable performance.,59.99,63,Memory
+Logitech MX Master 3S,"Wireless ergonomic mouse with a sculpted design, MagSpeed scroll wheel, and customizable buttons, ideal for productivity.",99.99,85,Mouse
+Logitech Lift Vertical Ergonomic Mouse,"Vertical ergonomic mouse designed for comfort, featuring quiet clicks and customizable buttons.",69.99,77,Mouse
+Logitech MX Vertical,"Advanced ergonomic mouse with a natural handshake position, reducing wrist strain during extended use.",99.99,85,Mouse
+Logitech Ergo M575,Wireless trackball mouse offering thumb control for smooth tracking and reduced hand movement.,49.99,88,Mouse
+Logitech MX Ergo,Wireless trackball mouse with adjustable hinge for personalized comfort and precision tracking.,99.99,72,Mouse
+Logitech M720 Triathlon,"Multi-device wireless mouse with ergonomic design, customizable buttons, and long battery life.",49.99,22,Mouse
+Logitech M330 Silent Plus,"Silent wireless mouse with ergonomic design, ideal for quiet environments and extended use.",29.99,66,Mouse
+Logitech M510,"Full-size wireless mouse with contoured shape, soft rubber grips, and customizable buttons.",39.99,38,Mouse
+Logitech M570,"Wireless trackball mouse with ergonomic design, providing comfort and precision for extended use.",49.99,60,Mouse
+Logitech M705 Marathon,"Wireless mouse with ergonomic design, hyper-fast scrolling, and up to 3 years of battery life.",49.99,32,Mouse
+Logitech M185,"Compact wireless mouse with comfortable design, ideal for on-the-go use and small hands.",14.99,23,Mouse
+Logitech M100,"Simple wired mouse with ambidextrous design, providing comfort and reliability for everyday use.",9.99,37,Mouse
+Logitech M325,"Compact wireless mouse with ergonomic design, precision scrolling, and long battery life.",29.99,65,Mouse
+Logitech M590 Multi-Device Silent,"Silent wireless mouse with ergonomic design, multi-device connectivity, and customizable buttons.",39.99,61,Mouse
+Logitech M235,"Compact wireless mouse with comfortable design, ideal for everyday use and portability.",24.99,58,Mouse
+Razer Basilisk V3 Pro,"High-performance gaming mouse with customizable RGB lighting, 11 programmable buttons, and a 30K DPI sensor.",159.99,97,Mouse
+Razer Viper V3 Pro,"Lightweight wireless gaming mouse with a 30K DPI optical sensor, designed for esports professionals.",149.99,95,Mouse
+Razer DeathAdder V3 Pro,"Ergonomic wireless gaming mouse with a 30K DPI sensor, offering comfort and precision for extended gaming sessions.",149.99,77,Mouse
+Razer Naga V2 Pro,"Modular wireless gaming mouse with interchangeable side plates, ideal for MMO and MOBA games.",179.99,84,Mouse
+Razer Viper V2 Pro,"Ultra-lightweight wireless gaming mouse with a 20K DPI sensor, designed for competitive gaming.",149.99,47,Mouse
+Razer Basilisk V3,"Wired gaming mouse with customizable RGB lighting, 11 programmable buttons, and a 26K DPI sensor.",69.99,53,Mouse
+Razer DeathAdder V2,"Ergonomic wired gaming mouse with a 20K DPI sensor, offering comfort and precision for gamers.",69.99,87,Mouse
+Razer Naga X,"Lightweight wired gaming mouse with 16 programmable buttons, designed for MMO gaming.",79.99,52,Mouse
+Razer Viper Mini,"Ultra-lightweight wired gaming mouse with a 8.5K DPI sensor, suitable for small to medium hands.",39.99,88,Mouse
+Razer Basilisk X Hyperspeed,"Wireless gaming mouse with dual-mode connectivity and a 16K DPI sensor, offering versatility and performance.",59.99,37,Mouse
+Razer DeathAdder Essential,"Affordable wired gaming mouse with a 6.4K DPI sensor, providing essential features for gamers.",29.99,84,Mouse
+Razer Naga Trinity,Modular wired gaming mouse with interchangeable side plates for customizable button layouts.,99.99,61,Mouse
+Logitech G502 HERO,"Wired gaming mouse with customizable weights, programmable buttons, and a 25K DPI sensor.",79.99,27,Mouse
+SteelSeries Rival 3,Affordable gaming mouse with customizable RGB lighting and a TrueMove Core sensor.,49.99,73,Mouse
+Corsair Dark Core RGB Pro SE,Wireless gaming mouse with Qi wireless charging and a 18K DPI sensor.,89.99,63,Mouse
+Dell UltraSharp 27 4K USB-C Hub Monitor (U2723QE),"27-inch 4K monitor with IPS Black technology, offering deep blacks, high contrast, and extensive ergonomic features.",549.99,60,Monitor
+HP E27m G4 QHD USB-C Conferencing Monitor,"27-inch QHD monitor designed for teleconferencing, featuring a 5MP webcam, dual 5W speakers, and echo-canceling microphones.",464.99,59,Monitor
+HP 24mh 23.8-Inch Display,"23.8-inch Full HD monitor with excellent sRGB color coverage, high contrast ratio, and built-in 2W speakers.",149.99,46,Monitor
+Dell 24 Touch USB-C Hub Monitor (P2424HT),24-inch Full HD touch-screen monitor with USB-C connectivity and a built-in hub for enhanced productivity.,419.99,96,Monitor
+Lenovo ThinkVision M14d,"14-inch portable monitor with a 2.2K resolution, offering a lightweight and slim design for on-the-go productivity.",209.99,81,Monitor
+Apple Pro Display XDR,"32-inch 6K Retina display with extreme dynamic range, designed for professional graphics and video editing.",5999.99,70,Monitor
+Wacom Cintiq Pro 27,"27-inch interactive pen display with 4K resolution, offering a premium drawing experience for artists.",3499.99,31,Monitor
+BenQ PD3225U,"32-inch 4K monitor designed for creative professionals, offering accurate colors and factory calibration.",899.99,86,Monitor
+Philips Creator Series 4K,"27-inch 4K monitor with a wide color gamut and HDR support, suitable for content creators.",749.99,64,Monitor
+LG DualUp Monitor,28-inch SDQHD (2560x2880) monitor with a unique aspect ratio and versatile stand for multitasking.,699.99,55,Monitor
+ASUS ProArt Display PA32UCX,32-inch 4K HDR monitor for professional color grading and video editing.,2999.99,44,Monitor
+Eizo ColorEdge CG319X,31.1-inch 4K+ professional monitor for high-end graphics and video production.,5999.99,32,Monitor
+Dell UltraSharp U3223QE,32-inch 4K monitor with excellent color accuracy and IPS Black technology.,1099.99,97,Monitor
+ViewSonic VP3881,38-inch ultrawide QHD+ monitor with HDR10 support for content creators.,1299.99,89,Monitor
+Samsung Smart Monitor M8,"32-inch 4K monitor with built-in apps, smart features, and wireless connectivity.",699.99,90,Monitor
+Alienware AW3225QF 4K QD-OLED,"32-inch 4K gaming monitor with QD-OLED technology, offering excellent color accuracy, low input lag, and high HDR brightness.",899.99,93,Monitor
+Asus TUF Gaming VG27AQL3A,"27-inch QHD gaming monitor with a 165Hz refresh rate, excellent color accuracy, and support for AMD FreeSync Premium and Nvidia G-Sync.",237.99,33,Monitor
+Samsung Odyssey OLED G8/G80SD S32DG80,"32-inch 4K OLED gaming monitor with a 240Hz refresh rate, delivering outstanding picture quality and near-instantaneous response time.",1299.99,83,Monitor
+Gigabyte AORUS FO27Q3,"27-inch QHD gaming monitor with a 360Hz refresh rate and QD-OLED panel, offering deep blacks and vivid colors.",899.99,77,Monitor
+Acer Nitro XV275K P3biipruzx,"27-inch 4K monitor with a 160Hz refresh rate, high brightness, and ergonomic stand, suitable for both gaming and productivity.",499.99,82,Monitor
+Asus ROG Swift OLED PG27AQDM,"27-inch 1440p OLED gaming monitor with a 240Hz refresh rate, offering excellent motion clarity and color accuracy.",999.99,82,Monitor
+LG UltraGear 45GR75DC,"45-inch curved gaming monitor with a 3.5K resolution, providing an immersive experience with vivid and sharp visuals.",1499.99,49,Monitor
+Dell S3222DGM,"32-inch curved gaming monitor with QHD resolution, 165Hz refresh rate, and high contrast ratio for deep blacks.",399.99,84,Monitor
+Sony InZone M10S,"27-inch 1440p OLED gaming monitor with a 480Hz refresh rate, designed for competitive gaming with ultra-fast response times.",1099.99,75,Monitor
+MSI MPG 321URX QD-OLED,"32-inch 4K QD-OLED monitor with a 240Hz refresh rate and glossy screen, offering clear and vibrant visuals.",1199.99,21,Monitor
+Asus ROG Swift 500Hz PG259QNR,"24.5-inch Full HD gaming monitor with an ultra-fast 500Hz refresh rate, ideal for esports enthusiasts.",799.99,22,Monitor
+ViewSonic Elite XG320Q,32-inch QHD gaming monitor with a 175Hz refresh rate and HDR600 certification.,899.99,87,Monitor
+AOC Agon AG254FG,24.5-inch Full HD gaming monitor with a 360Hz refresh rate and Nvidia G-Sync support.,699.99,62,Monitor
+Razer Raptor 27,27-inch QHD gaming monitor with a 144Hz refresh rate and Chroma RGB integration.,699.99,85,Monitor
+HP Omen 27i,27-inch QHD gaming monitor with a 165Hz refresh rate and vibrant IPS panel.,499.99,98,Monitor
+ASUS ROG Maximus Z790 Extreme,"High-end Intel LGA 1700 motherboard with robust power delivery, PCIe 5.0 support, and extensive connectivity options.",1000.99,22,Motherboard
+MSI MEG Z790 Godlike,"Premium Intel Z790 motherboard featuring advanced cooling solutions, multiple M.2 slots, and Wi-Fi 6E support.",1099.99,86,Motherboard
+Gigabyte Z790 AORUS Master,"High-performance Intel motherboard with PCIe 5.0, DDR5 support, and enhanced thermal design.",499.99,44,Motherboard
+ASRock X670E Taichi,"AMD AM5 motherboard with PCIe 5.0, USB4, and a robust VRM design for overclocking.",499.99,73,Motherboard
+Gigabyte B650E Aorus Master,AMD B650E chipset motherboard offering PCIe 5.0 support and multiple M.2 slots.,499.99,59,Motherboard
+ASUS ROG Strix Z790-A Gaming Wi-Fi II,"Mid-range Intel motherboard with Wi-Fi 7, multiple USB ports, and five M.2 sockets.",338.99,83,Motherboard
+Gigabyte Z790 Aorus Elite AX,Intel motherboard featuring four M.2 sockets and a premium appearance.,225.99,88,Motherboard
+ASRock B650E Taichi Lite,"AMD AM5 motherboard with premium hardware at a midrange price, including USB4 support.",279.99,76,Motherboard
+MSI MAG B760 Tomahawk Wi-Fi,Intel LGA 1700 motherboard with three M.2 sockets and integrated Wi-Fi 6E.,178.99,48,Motherboard
+ASRock B650 LiveMixer,AMD AM5 motherboard with a unique design and rear I/O featuring 14 USB ports.,174.99,65,Motherboard
+ASRock B660M Steel Legend,MicroATX Intel motherboard with integrated 2.5Gbps NIC and ARGB LEDs embedded in the PCB.,189.99,70,Motherboard
+ASRock B650E PG-ITX,Mini-ITX AMD motherboard with two M.2 sockets and robust power delivery.,219.99,78,Motherboard
+ASRock X570 Extreme4,AMD AM4 motherboard with a plethora of USB and SATA ports.,275.99,44,Motherboard
+MSI B450 Tomahawk,AMD B450 motherboard with an impressive feature set at an affordable price.,110.99,93,Motherboard
+ASUS ROG Strix X570-E Gaming,AMD X570 motherboard with full support for PCIe 4.0 and high-quality components.,475.99,83,Motherboard
+ASRock X870 Pro RS,Affordable high-end AMD AM5 motherboard with multiple USB4 ports and strong VRMs.,200.99,22,Motherboard
+ASUS Prime B760-Plus D4,"Intel LGA 1700 motherboard suitable for midrange gaming PCs, featuring four M.2 ports.",199.99,75,Motherboard
+Gigabyte Z790 Gaming X AX,"High-performance Intel motherboard for gaming machines, supporting 12th and 13th Gen Intel processors.",359.99,22,Motherboard
+ASUS ROG Strix B760-F Gaming Wi-Fi,Midrange Intel motherboard with premium audio solution and convenient attach/release latches.,199.99,92,Motherboard
+MSI MPG Z790 Carbon Wi-Fi,"High-performance Intel Z790 motherboard featuring PCIe 5.0 support, Wi-Fi 6E, and advanced cooling solutions.",399.99,99,Motherboard
+ASUS TUF Gaming B650-PLUS Wi-Fi,"AMD B650 motherboard with robust power delivery, Wi-Fi 6, and multiple M.2 slots for storage expansion.",219.99,34,Motherboard
+Gigabyte B550 AORUS Elite V2,"AMD B550 chipset motherboard offering PCIe 4.0 support, high-quality audio, and durable components.",159.99,99,Motherboard
+ASRock Z690 Phantom Gaming 4,"Intel Z690 motherboard with support for 12th Gen Intel processors, PCIe 5.0, and a solid power phase design.",189.99,65,Motherboard
+MSI MAG B550 Tomahawk,"AMD B550 motherboard known for its excellent thermal solution, 2.5G LAN, and extended heatsink design.",179.99,99,Motherboard
+ASUS Prime H610M-A D4,"Entry-level Intel H610 motherboard suitable for basic computing needs, featuring essential connectivity options.",99.99,60,Motherboard
+Gigabyte X570 AORUS Elite Wi-Fi,"AMD X570 motherboard with Wi-Fi 6, advanced thermal design, and support for PCIe 4.0 devices.",249.99,50,Motherboard
+ASRock B450M Steel Legend,MicroATX AMD B450 motherboard offering a balance of features and performance for budget builds.,89.99,46,Motherboard
+MSI MPG B550 Gaming Edge Wi-Fi,"AMD B550 motherboard with Wi-Fi 6, extended heatsink design, and support for high-speed storage solutions.",189.99,79,Motherboard
+ASUS ROG Crosshair VIII Hero,"High-end AMD X570 motherboard with robust power delivery, multiple M.2 slots, and premium audio components.",379.99,85,Motherboard
+Gigabyte Z590 AORUS Pro AX,"Intel Z590 motherboard featuring Wi-Fi 6, PCIe 4.0 support, and advanced thermal solutions for enhanced performance.",279.99,97,Motherboard
+Corsair RM750e (2023),"A fully modular, low-noise ATX power supply with 80 PLUS Gold efficiency, supporting ATX 3.0 and PCIe 5.0 standards.",100.99,76,Power Supply
+MSI MAG A850GL PCIE 5.0,"An 850W fully modular gaming PSU with 80 PLUS Gold certification, featuring a 12VHPWR cable and ATX 3.0 compatibility.",120.99,44,Power Supply
+Thermaltake Toughpower GF3 1000W,"A 1000W fully modular PSU with 80 PLUS Gold efficiency, designed for next-gen PCIe 5.0 graphics cards and Intel ATX 3.0 specifications.",160.99,29,Power Supply
+be quiet! Pure Power 12 M 750W,"A 750W modular PSU with 80 PLUS Gold efficiency, emphasizing stability and long-term durability.",100.99,57,Power Supply
+EVGA SuperNOVA 850 P5,"An 850W fully modular PSU with 80 PLUS Platinum certification, featuring ECO Mode for silent operation.",120.99,86,Power Supply
+Seasonic FOCUS GX-850,"An 850W fully modular PSU with 80 PLUS Gold efficiency, known for its reliability and compact size.",130.99,45,Power Supply
+Cooler Master V850 SFX Gold,"A compact 850W fully modular PSU with 80 PLUS Gold certification, suitable for small form factor builds.",140.99,78,Power Supply
+NZXT C1000 PSU (2022),"A 1000W fully modular PSU with 80 PLUS Gold efficiency, featuring sleeved cables and a 10-year warranty.",130.99,77,Power Supply
+ASUS ROG Thor 1200W Platinum II,"A 1200W fully modular PSU with 80 PLUS Platinum certification, featuring an OLED display and Aura Sync RGB lighting.",340.99,95,Power Supply
+Corsair HX1000i,"A 1000W fully modular PSU with 80 PLUS Platinum efficiency, compatible with ATX 3.0 and PCIe 5.0 standards.",235.99,62,Power Supply
+Thermaltake Smart Series 500W,"A 500W non-modular PSU with 80 PLUS certification, offering reliable performance for budget builds.",40.99,52,Power Supply
+EVGA 600 W1,"A 600W non-modular PSU with 80 PLUS White certification, providing basic power needs at an affordable price.",45.99,79,Power Supply
+Corsair RM850x (2021),"An 850W fully modular PSU with 80 PLUS Gold efficiency, known for its low noise and high performance.",150.99,78,Power Supply
+MSI MPG A1000G PCIE 5.0,"A 1000W fully modular gaming PSU with 80 PLUS Gold certification, featuring a 12VHPWR cable and ATX 3.0 compatibility.",200.99,23,Power Supply
+Thermaltake Toughpower GF1 850W,"An 850W fully modular PSU with 80 PLUS Gold efficiency, featuring ultra-quiet operation and a 10-year warranty.",100.99,91,Power Supply
+be quiet! Straight Power 12 1000W,"A 1000W fully modular PSU with 80 PLUS Platinum certification, emphasizing silent operation and high efficiency.",200.99,35,Power Supply
+Seasonic PRIME TX-1600,"A 1600W fully modular PSU with 80 PLUS Titanium efficiency, designed for ultimate performance and reliability.",540.99,61,Power Supply
+Corsair SF750 (2024),"A 750W fully modular SFX PSU with 80 PLUS Platinum efficiency, suitable for compact builds.",180.99,56,Power Supply
+EVGA SuperNOVA 1000 GT,"A 1000W fully modular PSU with 80 PLUS Gold certification, featuring a compact design and ECO Mode.",130.99,67,Power Supply
+Cooler Master MWE Gold 850 V2,"An 850W fully modular PSU with 80 PLUS Gold efficiency, featuring a 120mm HDB fan and semi-fanless mode.",100.99,96,Power Supply
+Thermaltake Toughpower GF3 750W,"A 750W fully modular PSU with 80 PLUS Gold efficiency, designed for next-gen PCIe 5.0 graphics cards and Intel ATX 3.0 specifications.",90.99,39,Power Supply
+Corsair RM1000e,"A 1000W fully modular PSU with 80 PLUS Gold efficiency, supporting ATX 3.0 and PCIe 5.0 standards.",160.99,46,Power Supply
+MSI MAG A650BN,"A 650W non-modular power supply unit with 80 PLUS Bronze certification, featuring a 120mm low-noise fan, DC-to-DC circuit design, and comprehensive protection mechanisms including OVP, OCP, OPP, OTP, and SCP.",55.99,88,Power Supply
+Corsair CX650M,"A 650W semi-modular PSU with 80 PLUS Bronze certification, offering reliable performance and flexible cable management.",80.99,35,Power Supply
+Thermaltake Smart BX1 600W,"A 600W non-modular PSU with 80 PLUS Bronze efficiency, featuring a 120mm silent fan and multiple protection mechanisms.",60.99,22,Power Supply
+EVGA 500 W1,"A 500W non-modular PSU with 80 PLUS White certification, providing essential power at an affordable price.",40.99,66,Power Supply
+Cooler Master MWE Bronze 550W V2,"A 550W non-modular PSU with 80 PLUS Bronze efficiency, featuring a 120mm HDB fan and flat black cables.",50.99,40,Power Supply
+Seasonic S12III 500W,"A 500W non-modular PSU with 80 PLUS Bronze certification, known for its reliability and silent operation.",55.99,27,Power Supply
+Antec Earthwatts Gold Pro 750W,"A 750W semi-modular PSU with 80 PLUS Gold efficiency, featuring hybrid modular cables and a 120mm whisper-quiet fan.",90.99,54,Power Supply
+Gigabyte P750GM,"A 750W fully modular PSU with 80 PLUS Gold certification, designed for high-performance gaming rigs.",85.99,82,Power Supply
+Samsung 970 Evo Plus 1TB NVMe SSD,"High-performance NVMe SSD with read speeds up to 3,500 MB/s, ideal for gaming and professional workloads.",129.99,36,Storage
+Western Digital Blue 1TB SATA SSD,Reliable SATA SSD offering solid performance for everyday computing needs.,99.99,31,Storage
+Crucial MX500 1TB SATA SSD,"Known for its reliability and performance, suitable for a wide range of applications.",104.99,78,Storage
+Kingston A2000 1TB NVMe SSD,Affordable NVMe SSD with impressive performance for budget-conscious users.,89.99,59,Storage
+Seagate FireCuda 520 1TB NVMe SSD,"SSD designed for gaming, offering high speeds and endurance.",149.99,34,Storage
+Samsung 860 Evo 1TB SATA SSD,SSD renowned for its reliability and consistent performance.,109.99,48,Storage
+Western Digital Black SN750 1TB NVMe SSD,High-performance NVMe SSD tailored for gaming and high-end computing.,139.99,90,Storage
+Crucial P1 1TB NVMe SSD,Entry-level NVMe SSD offering a balance between performance and cost.,94.99,61,Storage
+Kingston KC2500 1TB NVMe SSD,High-performance NVMe SSD with hardware-based encryption.,159.99,85,Storage
+TeamGroup T-Force Delta 1TB RGB SSD,Stylish RGB SSD with high-speed performance for gamers.,129.99,52,Storage
+Patriot P300 1TB NVMe SSD,Affordable high-speed NVMe SSD with enhanced durability.,89.99,31,Storage
+ADATA XPG SX8200 Pro 1TB NVMe SSD,Premium NVMe SSD offering fast speeds and a sleek design.,149.99,80,Storage
+Sabrent Rocket 1TB NVMe SSD,High-performance NVMe SSD with DRAM cache for optimal performance.,124.99,69,Storage
+Lexar NM610 1TB NVMe SSD,Affordable NVMe SSD with good performance for everyday use.,79.99,23,Storage
+PNY CS900 1TB SATA SSD,Reliable SATA SSD with a solid balance of price and performance.,84.99,46,Storage
+Seagate BarraCuda 1TB SATA HDD,Reliable 1TB HDD for desktops and laptops.,49.99,37,Storage
+Western Digital Blue 1TB SATA HDD,Budget-friendly HDD with solid performance for everyday tasks.,44.99,77,Storage
+Toshiba Canvio Basics 1TB USB HDD,Portable USB hard drive with plug-and-play simplicity.,54.99,77,Storage
+Seagate FireCuda 1TB SSHD,Hybrid drive combining SSD performance with HDD capacity.,74.99,97,Storage
+Western Digital Black 1TB Performance HDD,High-performance HDD designed for gaming and professional use.,84.99,24,Storage
+Toshiba X300 1TB Performance HDD,High-performance HDD with ample storage for demanding tasks.,79.99,76,Storage
+HGST Ultrastar 1TB HDD,Enterprise-grade HDD with enhanced reliability for data centers.,89.99,95,Storage
+Seagate IronWolf 1TB NAS HDD,Specialized HDD designed for NAS environments.,94.99,98,Storage
+Western Digital Red 1TB NAS HDD,Optimized for NAS systems with 24/7 reliability.,79.99,91,Storage
+Toshiba N300 1TB NAS HDD,Durable HDD designed for NAS and RAID environments.,99.99,76,Storage
+Seagate SkyHawk 1TB Surveillance HDD,HDD designed for surveillance systems with enhanced durability.,69.99,93,Storage
+Western Digital Purple 1TB Surveillance HDD,Reliable HDD for continuous surveillance recording.,74.99,52,Storage
+LaCie Rugged 1TB Portable HDD,Shock-resistant portable HDD with USB-C connectivity.,89.99,50,Storage
+Buffalo MiniStation 1TB Portable HDD,Compact USB HDD offering portability and decent performance.,64.99,95,Storage
+Seagate Expansion 1TB Portable HDD,USB-powered portable HDD with simple drag-and-drop functionality.,59.99,75,Storage
