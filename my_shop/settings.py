@@ -32,7 +32,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, "my_app/static")
 SECRET_KEY = os.environ.get("DJANGO_FORM_KEY")
 DEBUG = True
 
-ALLOWED_HOSTS = ["98.81.140.228", "192.168.167.22", "127.0.0.1", "172.31.17.204"]
+ALLOWED_HOSTS = ["98.81.140.228", "192.168.167.22", "127.0.0.1", "172.31.17.204", "localhost"]
 
 # Application definition
 

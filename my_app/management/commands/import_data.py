@@ -49,7 +49,7 @@ class Command(BaseCommand):
         self.stdout.write("Please wait for the command to finish...")
         category_count = 0
         product_count = 0
-        data_path = os.path.join(settings.STATIC_ROOT, r"my_app\data")
+        data_path = os.path.join(settings.STATIC_ROOT, r"my_app/data")
         with open(fr"{data_path}\categories.csv", mode="r") as file:
             reader = csv.DictReader(file)
             for row in reader:
