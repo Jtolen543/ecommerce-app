@@ -50,7 +50,7 @@ class Command(BaseCommand):
         category_count = 0
         product_count = 0
         data_path = os.path.join(settings.STATIC_ROOT, r"my_app/data")
-        with open(fr"{data_path}\categories.csv", mode="r") as file:
+        with open(fr"{data_path}/categories.csv", mode="r") as file:
             reader = csv.DictReader(file)
             for row in reader:
                 if not Category.objects.filter(type=row['type']).exists():
