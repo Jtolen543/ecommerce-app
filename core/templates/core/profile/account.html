@@ -1,0 +1,95 @@
+{% extends 'core/profile/profile.html' %}
+{% load widget_tweaks %}
+
+{% block content %}
+<div class="px-2 px-md-5 bg-white shadow">
+    <div class="fw-bold fs-1 mb-3 text-decoration-underline">Account Information</div>
+
+    <div class="d-flex fw-bold fs-5 text-secondary-emphasis flex-column flex-md-row flex-wrap">
+        <div class="me-3 boxing-width">First Name:</div>
+        <div class="flex-grow-1 text-break">{{ user.first_name }}</div>
+    </div>
+    <hr class="border border-bottom border-1 border-black w-100">
+
+    <div class="d-flex fw-bold fs-5 text-secondary-emphasis flex-column flex-md-row flex-wrap">
+        <div class="me-3 boxing-width">Last Name:</div>
+        <div class="flex-grow-1 text-break">{{ user.last_name }}</div>
+    </div>
+    <hr class="border border-bottom border-1 border-black w-100">
+
+    <div class="d-flex fw-bold fs-5 text-secondary-emphasis flex-column flex-md-row flex-wrap">
+        <div class="me-3 boxing-width">Username:</div>
+        <div class="flex-grow-1 text-break">{{ user.display }}</div>
+    </div>
+    <hr class="border border-bottom border-1 border-black w-100">
+
+    <div class="d-flex fw-bold fs-5 text-secondary-emphasis flex-column flex-md-row flex-wrap">
+        <div class="me-3 boxing-width">Email Address:</div>
+        <div class="flex-grow-1 text-break">{{ user.email }}</div>
+    </div>
+    <hr class="border border-bottom border-1 border-black w-100">
+
+    <div class="d-flex fw-bold fs-5 text-secondary-emphasis flex-column flex-md-row flex-wrap">
+        <div class="me-3 boxing-width">Phone Number:</div>
+        <div class="flex-grow-1 text-break">{% if not user.phone %}Not Set{% else %}{{ user.phone }}{% endif %}</div>
+    </div>
+    <hr class="border border-bottom border-1 border-black w-100">
+
+    <div class="d-flex fw-bold fs-5 text-secondary-emphasis flex-column flex-md-row flex-wrap">
+        <div class="me-3 boxing-width">Birth Date:</div>
+        <div class="flex-grow-1 text-break">{% if not user.birth_date %}Not Set{% else %}{{ user.birth_date }}{% endif %}</div>
+    </div>
+    <hr class="border border-bottom border-1 border-black w-100">
+
+    <div class="d-flex gap-2 px-2">
+        <button type="button" class="btn btn-dark fs-5 fw-bold align-middle" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Edit
+        </button>
+        <a href="{% url 'home' %}" class="btn btn-dark fs-5 fw-bold align-middle">Continue Browsing</a>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Profile</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form id="edit_form" method="post" action="{% url 'profile' %}">
+                    {% csrf_token %}
+
+                    <div class="form-label">{{ form.first_name.label }}</div>
+                    {% render_field form.first_name class+='form-control' %}
+
+                    <div class="form-label">{{ form.last_name.label }}</div>
+                    {% render_field form.last_name class+='form-control' %}
+
+                    <div class="form-label">{{ form.username.label }}</div>
+                    {% render_field form.username class+='form-control' %}
+
+                    <div class="form-label">{{ form.email.label }}</div>
+                    {% render_field form.email class+='form-control' %}
+
+                    <div class="d-flex flex-column">
+                        <div class="form-label">{{ form.phone.label }}</div>
+                        {% render_field form.phone class+='form-control' %}
+                    </div>
+                    <div class="form-label">{{ form.birth_date.label }}</div>
+                    {% render_field form.birth_date class+='form-control' %}
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" form="edit_form" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+     {% for message in messages %}
+        <div class="text-primary fs-4 fw-bold">{{ message }}</div>
+    {% endfor %}
+</div>
+
+{% endblock %}

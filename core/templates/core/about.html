@@ -1,0 +1,104 @@
+{% include 'core/base/header.html' %}
+{% load static %}
+<body>
+  <main class="container my-5">
+        <section class="text-center mb-5">
+            <h1 class="display-4 mb-3">About Our Store</h1>
+            <p class="lead mb-4">Bringing quality products to your doorstep since 2024</p>
+            <img src="{% static 'my_app/img/shop.svg' %}" alt="Our Store" class="img-fluid rounded shadow-sm" width="100">
+        </section>
+
+        <section class="mb-5">
+            <h2 class="h2 mb-4">Our Story</h2>
+            <p>Founded in 2024, our e-commerce store began with a simple mission: to provide high-quality products to customers around the world. What started as a small operation in a garage has grown into a global brand, thanks to our dedication to customer satisfaction and our passion for excellence.</p>
+            <p>Today, we offer a wide range of products across multiple categories, from electronics to home decor. Our team of experts carefully curates each item to ensure it meets our high standards of quality and value.</p>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="h2 mb-4">Why Choose Us?</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-shield-check fs-1 text-primary mb-3"></i>
+                            <h3 class="card-title h4">Quality Guaranteed</h3>
+                            <p class="card-text">We stand behind every product we sell with our satisfaction guarantee.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-truck fs-1 text-primary mb-3"></i>
+                            <h3 class="card-title h4">Fast Shipping</h3>
+                            <p class="card-text">Enjoy quick and reliable shipping on all your orders.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-heart fs-1 text-primary mb-3"></i>
+                            <h3 class="card-title h4">Customer-First Approach</h3>
+                            <p class="card-text">Our dedicated support team is always here to help you.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="h2 mb-4">Our Team</h2>
+            <div class="row g-4 d-flex justify-content-center">
+                <div class="col-md-3 col-sm-6">
+                    <div class="card team-member">
+                        <img src="{% static 'my_app/img/person.svg' %}" class="card-img-top rounded-circle mx-auto mt-3" alt="Jane Doe">
+                        <div class="card-body text-center">
+                            <h3 class="card-title h5">John Doe</h3>
+                            <p class="card-text">Founder & CEO</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card team-member">
+                        <img src="{% static 'my_app/img/person.svg' %}" class="card-img-top rounded-circle mx-auto mt-3" alt="John Smith">
+                        <div class="card-body text-center">
+                            <h3 class="card-title h5">John Smith</h3>
+                            <p class="card-text">Head of Operations</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card team-member">
+                        <img src="{% static 'my_app/img/person.svg' %}" class="card-img-top rounded-circle mx-auto mt-3" alt="Emily Brown">
+                        <div class="card-body text-center">
+                            <h3 class="card-title h5">Emily Brown</h3>
+                            <p class="card-text">Customer Service Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card team-member">
+                        <img src="{% static 'my_app/img/person.svg' %}" class="card-img-top rounded-circle mx-auto mt-3" alt="Michael Lee">
+                        <div class="card-body text-center">
+                            <h3 class="card-title h5">Michael Lee</h3>
+                            <p class="card-text">Lead Product Curator</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-center mb-5">
+            <h2 class="h2 mb-4">Our Global Reach</h2>
+            <p class="mb-4">We're proud to serve customers in over 50 countries, bringing quality products to doorsteps around the world.</p>
+            <i class="bi bi-globe fs-1 text-primary"></i>
+        </section>
+
+        <section class="text-center">
+            <h2 class="h2 mb-4">Get in Touch</h2>
+            <p class="mb-4">Have questions or feedback? We'd love to hear from you. Our customer service team is available 24/7 to assist you.</p>
+            <a href="{% url 'contact' %}" class="btn btn-primary btn-lg">Contact Us</a>
+        </section>
+    </main>
+{% include 'core/base/footer.html' %}

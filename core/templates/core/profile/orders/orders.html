@@ -1,0 +1,86 @@
+{% extends 'core/profile/profile.html' %}
+{% block content %}
+
+<div class="container bg-white p-3 my-md-3 shadow-lg">
+    <div class="fw-bold fs-2 mb-5 text-center text-decoration-underline">Recent Orders</div>
+             {% for message in messages %}
+                <div class="text-success fs-4 fw-bold text-center">{{ message }}</div>
+            {% endfor %}
+        <div class="px-3 row align-self-center gap-5 flex-wrap h-25 d-flex justify-content-center">
+            {% for order, data in page_obj.object_list %}
+            <div class="card col-12 col-lg-3">
+                <div class="card-body d-flex flex-column justify-content-between gap-3">
+                    <div class="d-flex flex-column gap-1">
+                        <div class="fw-bold">Order# {{ order.order_id }}</div>
+                        <div class="fs-6 text-secondary fw-bold">Placed on {{ order.created|date:"F j, Y" }}</div>
+                        <div class="badge text-bg-success w-50">Completed</div>
+                        <div class="">Total Price: ${{ order.total_price }}</div>
+                    </div>
+                    <div class="d-flex gap-2 align-middle">
+                        <button class="text-decoration-none btn btn-primary" data-bs-toggle="modal" data-bs-target="#{{ order.order_id }}">View Details</button>
+<!--                        <div class="fw-bold"> | </div>-->
+<!--                        <a href="#" class="text-decoration-none text-primary">Delete</a>-->
+                    </div>
+                </div>
+            </div>
+<!--         Order Details Modal   -->
+            <div class="modal fade" id="{{ order.order_id }}" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="orderModalLabel">Order Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <h6>Shipping Address</h6>
+                                <p>
+                                    {{ data.address.name }}<br>
+                                    {{ data.address.line1}}{% if data.address.line2 %} data.address.line2{% endif %}<br>
+                                    {{ data.address.city }}, {{ data.address.state }}, {{ data.address.postal_code }}<br>
+                                    {{ data.address.country }}
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <h6>Order Summary</h6>
+                                <p>
+                                    Order Date: {{ order.created|date:"F j, Y" }}<span id="modalOrderDate"></span><br>
+<!--                                    Order Status: <span id="modalOrderStatus"></span><br>-->
+                                    Total: ${{ order.total_price }}<span id="modalOrderTotal"></span>
+                                </p>
+                            </div>
+                        </div>
+                        <h6>Items Ordered</h6>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Quantity</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody id="modalOrderItems">
+                                {% for product in data.products %}
+                                <tr class="fw-normal">
+                                    <th>{{ product.product.name }}</th>
+                                    <th>{{ product.quantity }}</th>
+                                    <th>{{ product.product.price }}</th>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+<!--        Paginator Navigator    -->
+        {% include 'core/paginator.html' %}
+    </div>
+</div>
+
+{% endblock %}

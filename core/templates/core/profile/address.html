@@ -1,0 +1,65 @@
+{% include 'core/base/header.html' %}{% load widget_tweaks %}
+<body class="d-flex flex-column justify-content-between vh-100">
+
+<div class="bg-light py-3 py-md-5">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-12 col-md-11 col-lg-8 col-xl-7 col-xxl-6">
+        <div class="bg-white p-4 p-md-5 rounded shadow-sm">
+          <div class="row">
+            <div class="col-12">
+              <div class="mb-5">
+                <h2 class="h3">{% if title == 'Add Address' %}Add a new Address{% else %}Edit Address{% endif %}</h2>
+                <h3 class="fs-6 fw-normal text-secondary m-0">Provide the full address associated to the location you want orders delivered.</h3>
+              </div>
+            </div>
+          </div>
+          <form method="post" action="{{ link }}">
+              {% csrf_token %}
+
+              <div class="form-group">
+                  <div class="form-label">{{ form.address.label }}</div>
+                  {% render_field form.address class+='form-control' %}
+              </div>
+
+              <div class="form-group">
+                  <div class="form-label">{{ form.details.label }}</div>
+                  {% render_field form.details class+='form-control' %}
+              </div>
+
+              <div class="form-group">
+                  <div class="form-label">{{ form.city.label }}</div>
+                  {% render_field form.city class+='form-control' %}
+              </div>
+
+              <div class="form-group">
+                  <div class="form-label">{{ form.state.label }}</div>
+                  {% render_field form.state class+='form-control' %}
+              </div>
+
+              <div class="form-group">
+                  <div class="form-label">{{ form.zipcode.label }}</div>
+                  {% render_field form.zipcode class+='form-control' %}
+              </div>
+
+              <div class="form-group">
+                  <div class="form-label">{{ form.country.label }}</div>
+                  {% render_field form.country class+='form-control' %}
+              </div>
+
+              <div class="text-center"><button class="form-control btn btn-primary my-2 w-50">Add New Address</button></div>
+          </form>
+          <div class="row">
+            <div class="col-12">
+              <hr class="mt-5 border-secondary-subtle">
+              <div class="d-flex gap-4 justify-content-end">
+                <a href="{% url 'locations' %}" class="btn btn-dark">Discard Changes</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% include 'core/base/footer.html' %}

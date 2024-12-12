@@ -1,0 +1,79 @@
+{% include 'core/base/header.html' %}{% load static %}
+{% load widget_tweaks %}
+<link href="{% static 'my_app/css/stripe.css' %}" rel="stylesheet">
+<body class="d-flex flex-column justify-content-between vh-100">
+
+<div class="bg-light py-3 py-md-5">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-12 col-md-11 col-lg-8 col-xl-7 col-xxl-6">
+        <div class="bg-white p-4 p-md-5 rounded shadow-sm">
+          <div class="row">
+            <div class="col-12">
+              <div class="mb-5">
+                <h2 class="h3">Edit Payment Details</h2>
+              </div>
+            </div>
+          </div>
+<!--          Payment Container  -->
+          <div class="payment-container">
+            <form action="{{ link }}" method="post">
+                  {% csrf_token %}
+                    <div>Expiration Date: *</div>
+                  <div class="d-flex gap-2">
+                    <div class="form-group">
+                      {% render_field form.month class+='form-control' %}
+                    </div>
+
+                    <div class="form-group">
+                      {% render_field form.year class+='form-control' %}
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                      <div class="form-label">{{ form.address.label }}</div>
+                      {% render_field form.address class+='form-control' %}
+                  </div>
+
+                  <div class="form-group">
+                      <div class="form-label">{{ form.details.label }}</div>
+                      {% render_field form.details class+='form-control' %}
+                  </div>
+
+                  <div class="form-group">
+                      <div class="form-label">{{ form.city.label }}</div>
+                      {% render_field form.city class+='form-control' %}
+                  </div>
+
+                  <div class="form-group">
+                      <div class="form-label">{{ form.state.label }}</div>
+                      {% render_field form.state class+='form-control' %}
+                  </div>
+
+                  <div class="form-group">
+                      <div class="form-label">{{ form.zipcode.label }}</div>
+                      {% render_field form.zipcode class+='form-control' %}
+                  </div>
+
+                  <div class="form-group">
+                      <div class="form-label">{{ form.country.label }}</div>
+                      {% render_field form.country class+='form-control' %}
+                  </div>
+                  <button type="submit" id="submit-button">Save Payment</button>
+              </form>
+          </div>
+<!--          -->
+          <div class="row">
+            <div class="col-12">
+              <hr class="mt-5 border-secondary-subtle">
+              <div class="d-flex gap-4 justify-content-end">
+                <a href="{% url 'payments' %}" class="btn btn-dark">Discard Changes</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% include 'core/base/footer.html' %}
