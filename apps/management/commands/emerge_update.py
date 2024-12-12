@@ -3,7 +3,7 @@ import os
 from django.conf import settings
 from ...models import Product, Category
 
-path = os.path.join(settings.STATIC_URL, r"my_app\img\product")
+path = os.path.join(settings.STATIC_URL, r"apps\img\product")
 
 store = {
     "Power Supply": os.path.join(path, "power_supply.png"),

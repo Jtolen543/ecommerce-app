@@ -73,7 +73,7 @@ class Migration(migrations.Migration):
                 ('total_price', models.DecimalField(decimal_places=2, default=0, max_digits=10)),
                 ('created', models.DateTimeField(null=True)),
                 ('customer', models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, related_name='orders', to=settings.AUTH_USER_MODEL)),
-                ('location', models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, related_name='orders', to='my_app.location')),
+                ('location', models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, related_name='orders', to='apps.location')),
             ],
             options={
                 'db_table': 'orders',
@@ -92,7 +92,7 @@ class Migration(migrations.Migration):
                 ('is_active', models.BooleanField(default=True)),
                 ('created_at', models.DateTimeField(null=True)),
                 ('updated_at', models.DateTimeField(null=True)),
-                ('category', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='products', to='my_app.category')),
+                ('category', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='products', to='apps.category')),
             ],
             options={
                 'db_table': 'products',
@@ -103,7 +103,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('is_primary', models.BooleanField(default=False)),
-                ('location', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='location', to='my_app.location')),
+                ('location', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='location', to='apps.location')),
                 ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='user', to=settings.AUTH_USER_MODEL)),
             ],
             options={
@@ -116,8 +116,8 @@ class Migration(migrations.Migration):
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('quantity', models.IntegerField(default=0)),
                 ('price', models.DecimalField(decimal_places=2, default=0, max_digits=10)),
-                ('order', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='my_app.order')),
-                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='my_app.product')),
+                ('order', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='apps.order')),
+                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='apps.product')),
             ],
             options={
                 'db_table': 'product_orders',
@@ -126,7 +126,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='order',
             name='products',
-            field=models.ManyToManyField(related_name='orders', through='my_app.ProductOrders', to='my_app.product'),
+            field=models.ManyToManyField(related_name='orders', through='apps.ProductOrders', to='apps.product'),
         ),
         migrations.AddConstraint(
             model_name='location',
@@ -140,7 +140,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='user',
             name='locations',
-            field=models.ManyToManyField(related_name='users', through='my_app.UserLocation', to='my_app.location'),
+            field=models.ManyToManyField(related_name='users', through='apps.UserLocation', to='apps.location'),
         ),
         migrations.AddField(
             model_name='user',

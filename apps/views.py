@@ -38,11 +38,11 @@ def home(request):
         'Monitors': smartphones
     }
     context = {'title': "", 'current_year': current_year, "user": request.user, 'categories': categories}
-    return render(request, "my_app/home.html", context=context)
+    return render(request, "apps/home.html", context=context)
 
 def about(request):
     context = {'title': "", 'current_year': current_year, "user": request.user}
-    return render(request, "my_app/about.html", context=context)
+    return render(request, "apps/about.html", context=context)
 
 @csrf_protect
 def contact(request):
@@ -62,7 +62,7 @@ def contact(request):
     else:
         form = ContactForm()
     context = {'title': "", 'current_year': current_year, "user": request.user, 'form': form, 'key':os.environ.get("GOOGLE_MAPS_KEY")}
-    return render(request, "my_app/contact.html", context=context)
+    return render(request, "apps/contact.html", context=context)
 
 def register(request):
     if request.method == "POST":
@@ -88,11 +88,11 @@ def register(request):
                 return redirect('login')
     else:
         form = RegisterForm()
-    return render(request,"my_app/auth/signup.html", {"form":form, "title":"Sign-Up", "current_year":current_year})
+    return render(request,"apps/auth/signup.html", {"form":form, "title":"Sign-Up", "current_year":current_year})
 
 
 def tos(request):
-    return render(request,"my_app/tos.html", {"current_year":current_year})
+    return render(request,"apps/tos.html", {"current_year":current_year})
 
 
 def signin(request):
@@ -114,7 +114,7 @@ def signin(request):
     else:
         form = LoginForm()
     context = {"form":form, "title": "Sign-In", "current_year": current_year}
-    return render(request, 'my_app/auth/signin.html', context=context)
+    return render(request, 'apps/auth/signin.html', context=context)
 
 
 @login_required
@@ -150,7 +150,7 @@ def reset_password(request):
             messages.error(request, "Please fill out the form")
     else:
         form = ResetForm()
-    return render(request,'my_app/auth/reset_password.html', {"form":form, "current_year":current_year, "title":"Reset"})
+    return render(request,'apps/auth/reset_password.html', {"form":form, "current_year":current_year, "title":"Reset"})
 
 
 def set_password(request, uidb64, token):
@@ -171,7 +171,7 @@ def set_password(request, uidb64, token):
     else:
         form = SetNewPasswordForm()
     context = {"form":form, "current_year":current_year, "title":"Reset", "token": token, 'uidb64': uidb64}
-    return render(request, "my_app/auth/set_password.html", context=context)
+    return render(request, "apps/auth/set_password.html", context=context)
 
 
 @login_required
@@ -201,7 +201,7 @@ def profile_account(request):
     initial['birth_date'] = user.birth_date if user.birth_date else ""
     form = EditProfileForm(initial=initial)
     context = {"user":user, "form":form, "title":"Account"}
-    return render(request,"my_app/profile/account.html", context=context)
+    return render(request,"apps/profile/account.html", context=context)
 #
 #
 @login_required
@@ -217,7 +217,7 @@ def profile_location(request):
     except EmptyPage:
         page_obj = paginator.page(paginator.num_pages)
     context = {"user":user, "title":"Location", "key":os.environ.get("GOOGLE_MAPS_KEY"), "page_obj":page_obj}
-    return render(request,"my_app/profile/location.html", context=context)
+    return render(request,"apps/profile/location.html", context=context)
 
 
 @login_required
@@ -248,7 +248,7 @@ def add_address(request):
         form = LocationForm()
     context = {"form":form, "current_year":current_year, "title":"Add Address",
                            "key":os.environ.get("GOOGLE_MAPS_KEY"), "link":link}
-    return render(request, "my_app/profile/address.html", context=context)
+    return render(request, "apps/profile/address.html", context=context)
 
 
 @login_required
@@ -271,7 +271,7 @@ def edit_address(request, _id):
         form = LocationForm(initial=initial)
 
     context = {"form":form, "current_year":current_year, "title":"Edit Address", "key":os.environ.get("GOOGLE_MAPS_KEY"), "link":link}
-    return render(request,"my_app/profile/address.html", context=context)
+    return render(request,"apps/profile/address.html", context=context)
 
 
 @login_required
@@ -299,12 +299,12 @@ def profile_payment(request):
         page_obj = paginator.page(paginator.num_pages)
 
     context = {"user":request.user, "title":"Wallet", "page_obj": page_obj}
-    return render(request, 'my_app/profile/payments.html', context=context)
+    return render(request, 'apps/profile/payments.html', context=context)
 
 @login_required
 def add_payment(request):
     context = {'title': "Add Payment", 'current_year': current_year}
-    return render(request, "my_app/profile/payments/add_payment.html", context=context)
+    return render(request, "apps/profile/payments/add_payment.html", context=context)
 
 @login_required
 def create_setup_intent(request):
@@ -356,7 +356,7 @@ def edit_payment(request, pm_id):
     link = request.build_absolute_uri(reverse("edit_payment", kwargs={"pm_id": pm_id}))
     context = {'title': "Edit Payment", "public_key": os.environ.get("STRIPE_PUBLISHABLE_KEY"),
             'link': link, "user": request.user, 'key':os.environ.get("GOOGLE_MAPS_KEY"), "form": form}
-    return render(request, "my_app/profile/payments/edit_payment.html", context=context)
+    return render(request, "apps/profile/payments/edit_payment.html", context=context)
 
 @login_required
 def delete_payment(request, pm_id):
@@ -394,7 +394,7 @@ def profile_orders(request):
         page_obj = paginator.page(paginator.num_pages)
 
     context = {"user": user, "title": "Orders", "page_obj": page_obj}
-    return render(request, "my_app/profile/orders/orders.html", context=context)
+    return render(request, "apps/profile/orders/orders.html", context=context)
 
 
 @login_required
@@ -430,12 +430,12 @@ def add_product(request):
     else:
         form = ProductForm()
     context = {'title': "Add Product", 'current_year': current_year, "user": request.user, 'form':form}
-    return render(request, 'my_app/admin/add_product.html', context=context)
+    return render(request, 'apps/admin/add_product.html', context=context)
 
 @login_required
 def delete_account(request):
     context = {"user": request.user, "title": "Delete Account"}
-    return render(request, 'my_app/profile/delete_account.html', context=context)
+    return render(request, 'apps/profile/delete_account.html', context=context)
 
 
 @login_required
@@ -448,7 +448,7 @@ def edit_product(request):
     else:
         form = ProductForm()
     context = {'title': "Edit Product", 'current_year': current_year, "user": request.user, 'form':form}
-    return render(request, 'my_app/admin/edit_product.html', context=context)
+    return render(request, 'apps/admin/edit_product.html', context=context)
 
 @csrf_protect
 def product(request, name):
@@ -459,7 +459,7 @@ def product(request, name):
 
     item = Product.objects.get(name=name)
     context = {'title': "Product", 'current_year': current_year, 'user': request.user, 'product':item}
-    return render(request, 'my_app/product/page.html', context=context)
+    return render(request, 'apps/product/page.html', context=context)
 
 def shop_cart(request):
     cart = ShoppingCart(request)
@@ -476,7 +476,7 @@ def shop_cart(request):
         addition = calculate_tax(line_items)
     context = {'title': "Product", 'current_year': current_year, 'user': request.user, 'products': products,
                'subtotal': subtotal, "root": request.get_host()} | addition
-    return render(request, 'my_app/product/checkout.html', context=context)
+    return render(request, 'apps/product/checkout.html', context=context)
 
 @csrf_protect
 def update_cart(request, name, quantity):
@@ -526,7 +526,7 @@ def session_checkout(request):
         form = LoginForm()
 
     context = {"form":form, "title": "Guest Checkout", "current_year": current_year}
-    return render(request,"my_app/checkout/session_checkout.html", context=context)
+    return render(request,"apps/checkout/session_checkout.html", context=context)
 
 @csrf_protect
 def confirm_checkout(request):
@@ -562,7 +562,7 @@ def confirm_checkout(request):
         payments = parse_payments(payments)
         additional = {'address_form':address_form, 'payments':payments, 'form':form, 'key': os.environ.get("GOOGLE_MAPS_KEY")}
         context.update(additional)
-    return render(request, "my_app/checkout/confirm_checkout.html", context=context)
+    return render(request, "apps/checkout/confirm_checkout.html", context=context)
 
 
 def finalize_express_checkout(request, pi_id, email):
@@ -624,7 +624,7 @@ def payment_success(request, pi_id):
             cart.clear_cart()
         except stripe.InvalidRequestError:
             return HttpResponseNotFound("<h1>Invalid Checkout Session</h1>")
-    return render(request, "my_app/checkout/payment_success.html", context=context)
+    return render(request, "apps/checkout/payment_success.html", context=context)
 
 def review_order(request, order_num):
     order = Order.objects.get(order_id=order_num)
@@ -640,7 +640,7 @@ def review_order(request, order_num):
                'method': payment_method, 'address': payment["shipping"]["address"], "products": order_products,
                'order_num': order_num, 'date': order.created.strftime("%B %d, %Y"), "tax":tax,
                'subtotal': subtotal, 'shipping':shipping, 'total': payment['amount'] / 100}
-    return render(request, "my_app/checkout/order_summary.html", context=context)
+    return render(request, "apps/checkout/order_summary.html", context=context)
 
 
 def delete_user_account(request):
@@ -687,7 +687,7 @@ def catalog(request, query=None):
     price = price if price else 'null'
     context = {'title': "Catalog", 'current_year': current_year, "user": request.user, 'categories': all_categories,
                'filtered_cat': categories, 'filtered_price': price, 'page_obj': page_obj}
-    return render(request, "my_app/catalog/products.html", context=context)
+    return render(request, "apps/catalog/products.html", context=context)
 
 ''' API WEBHOOKS '''
 

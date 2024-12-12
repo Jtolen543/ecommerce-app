@@ -5,7 +5,7 @@ The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.1/topics/http/urls/
 Examples:
 Function views
-    1. Add an import:  from my_app import views
+    1. Add an import:  from apps import views
     2. Add a URL to urlpatterns:  path('', views.home, name='home')
 Class-based views
     1. Add an import:  from other_app.views import Home
@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
-from my_app import views
+from apps import views
 from django.views.generic import RedirectView
 
 
@@ -55,7 +55,7 @@ urlpatterns = [
     path('confirm_checkout', views.confirm_checkout, name="confirm_checkout"),
     path('payment_success/<pi_id>', views.payment_success, name="payment_success"),
     path('review_order/<order_num>', views.review_order, name="review_order"),
-    path('favicon.ico', RedirectView.as_view(url=settings.STATIC_URL + 'my_app/img/favicon.ico')),
+    path('favicon.ico', RedirectView.as_view(url=settings.STATIC_URL + 'apps/img/favicon.ico')),
     path('catalog', views.catalog, name="catalog"),
     path('catalog/<str:query>/', views.catalog, name='catalog_query')
 ]
