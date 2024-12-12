@@ -33,7 +33,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 SECRET_KEY = os.environ.get("DJANGO_FORM_KEY")
 DEBUG = False
 
-ALLOWED_HOSTS = ["django-ecommerce-app.herokuapp.com", "127.0.0.1:8000"]
+ALLOWED_HOSTS = ["django-ecommerce-app-c7d08b840bfc.herokuapp.com", "127.0.0.1:8000"]
 
 # Application definition
 
