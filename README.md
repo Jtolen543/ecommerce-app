@@ -74,10 +74,6 @@ Ensure you have the following installed:
 
 7. Access the application at [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
 
-## Usage
-
-- [Add details about how to use your app, such as "Log in as an admin to manage content"]
-- [Add steps for testing or interacting with key features]
 
 ## Project Structure
 
@@ -137,9 +133,6 @@ Contributions are welcome! Follow these steps:
    ```
 5. Open a pull request.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
