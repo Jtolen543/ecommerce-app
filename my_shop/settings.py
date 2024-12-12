@@ -24,6 +24,7 @@ MEDIA_URL = "/media/"
 
 STATIC_URL = "/static/"
 STATIC_ROOT = os.path.join(BASE_DIR, "my_app/static")
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
