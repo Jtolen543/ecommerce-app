@@ -1,7 +1,7 @@
 from django.core.management.base import BaseCommand
 import os
 from django.conf import settings
-from ...models import Product, Category
+from apps.models import Product, Category
 
 path = os.path.join(settings.STATIC_URL, r"apps\img\product")
 
