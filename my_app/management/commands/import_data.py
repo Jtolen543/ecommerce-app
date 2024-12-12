@@ -63,7 +63,7 @@ class Command(BaseCommand):
             for row in reader:
                 if not Product.objects.filter(name=row['name']).exists():
                     product = Product(
-                        name=row['name'],
+                        name=row['name'].replace('/', ' '),
                         description=row['description'],
                         price=float(row['price']),
                         stock=int(row['stock']),
