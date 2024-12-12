@@ -55,10 +55,10 @@ urlpatterns = [
     path('confirm_checkout', views.confirm_checkout, name="confirm_checkout"),
     path('payment_success/<pi_id>', views.payment_success, name="payment_success"),
     path('review_order/<order_num>', views.review_order, name="review_order"),
-    path('favicon.ico', RedirectView.as_view(url='static/favicon.ico')),
+    path('favicon.ico', RedirectView.as_view(url=settings.STATIC_URL + 'my_app/img/favicon.ico')),
     path('catalog', views.catalog, name="catalog"),
     path('catalog/<str:query>/', views.catalog, name='catalog_query')
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]
 
 api_webhooks = [
     path('get_location_from_id/<int:_id>', views.get_address_from_id, name="get_location_from_id"),
