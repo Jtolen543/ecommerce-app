@@ -32,7 +32,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, "my_app/static")
 SECRET_KEY = os.environ.get("DJANGO_FORM_KEY")
 DEBUG = True
 
-ALLOWED_HOSTS = [".vercel.app", "localhost"]
+ALLOWED_HOSTS = ["django-ecommerce-app.herokuapp.com", "localhost"]
 
 # Application definition
 
