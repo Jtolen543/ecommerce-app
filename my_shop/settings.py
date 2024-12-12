@@ -30,9 +30,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, "my_app/static")
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get("DJANGO_FORM_KEY")
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ["django-ecommerce-app.herokuapp.com", "localhost"]
+ALLOWED_HOSTS = ["django-ecommerce-app.herokuapp.com", "127.0.0.1:8000"]
 
 # Application definition
 
