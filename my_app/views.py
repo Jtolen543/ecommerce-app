@@ -37,8 +37,6 @@ def home(request):
         'CPUs': tablets,
         'Monitors': smartphones
     }
-
-    print(categories['GPUs'][0].image)
     context = {'title': "", 'current_year': current_year, "user": request.user, 'categories': categories}
     return render(request, "my_app/home.html", context=context)
 

@@ -32,7 +32,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, "my_app/static")
 SECRET_KEY = os.environ.get("DJANGO_FORM_KEY")
 DEBUG = True
 
-ALLOWED_HOSTS = ["98.81.140.228", "192.168.167.22", "127.0.0.1", "172.31.17.204", "localhost"]
+ALLOWED_HOSTS = [".vercel.app", "localhost"]
 
 # Application definition
 
@@ -79,18 +79,16 @@ TEMPLATES = [
     },
 ]
 
+tmpPostgres = urlparse(os.getenv("DATABASE_URI"))
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get("AWS_POSTGRES_DBNAME"),
-        'USER': os.environ.get("AWS_POSTGRES_USERNAME"),
-        'PASSWORD': os.environ.get("AWS_POSTGRES_PASSWORD"),
-        'HOST': os.environ.get("AWS_POSTGRES_ENDPOINT"),
-        'PORT': os.environ.get("AWS_POSTGRES_PORT"),
-        # 'OPTIONS': {
-        #     'sslmode': 'require',
-        #     'sslrootcert': os.path.join(BASE_DIR, 'django-ecommerce.pem')
-        # }
+        'NAME': tmpPostgres.path.replace('/', ''),
+        'USER': tmpPostgres.username,
+        'PASSWORD': tmpPostgres.password,
+        'HOST': tmpPostgres.hostname,
+        'PORT': 5432,
     }
 }
 
