@@ -5,7 +5,7 @@ import stripe
 from apps.models import Product, Category
 import csv
 
-path = os.path.join(settings.STATIC_URL, r"apps\img\product")
+path = os.path.join(settings.STATIC_URL, r"core\img\product")
 
 store = {
     "Power Supply": os.path.join(path, "power_supply.png"),
