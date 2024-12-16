@@ -820,10 +820,13 @@ def create_payment_intent(request):
     if customer:
         customer = stripe.Customer.retrieve(customer)
         # Find all billing information
-        payment_method = stripe.Customer.list_payment_methods(customer["id"])["data"][0]["billing_details"]
-        billing_details = payment_method
-        # # Find all addresses
-        data |= {"billingDetails": billing_details, "address": customer["address"].to_dict()}
+        payment_method = stripe.Customer.list_payment_methods(customer["id"])["data"]
+        if payment_method:
+            billing_details = payment_method[0]["billing_details"]
+            data |= {"billingDetails": billing_details}
+        # Find all addresses
+        if customer["address"]:
+            data |= {"address": customer["address"].to_dict()}
     return JsonResponse(data)
 
 def update_payment_intent(request):
