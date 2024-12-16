@@ -3,8 +3,8 @@
     {% for category, products in categories.items %}
         <section class="product bg-body-secondary">
             <div class="product-category fw-bold text-center">{{ category }}</div>
-            <button class="pre-btn"><img src="{% static 'my_app/img/arrow.svg' %}" height="50"></button>
-            <button class="nxt-btn"><img src="{% static 'my_app/img/arrow.svg' %}" height="50"></button>
+            <button class="pre-btn"><img src="{% static 'core/img/arrow.svg' %}" height="50"></button>
+            <button class="nxt-btn"><img src="{% static 'core/img/arrow.svg' %}" height="50"></button>
             <div class="product-container">
                 {% for product in products %}
                     <a class="product-card text-decoration-none text-reset" role="button" href="{% url 'product' product.name %}">
