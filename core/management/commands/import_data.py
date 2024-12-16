@@ -2,7 +2,7 @@ from django.core.management.base import BaseCommand
 import os
 from django.conf import settings
 import stripe
-from apps.models import Product, Category
+from core.models import Product, Category
 import csv
 
 path = os.path.join(settings.STATIC_URL, r"core\img\product")

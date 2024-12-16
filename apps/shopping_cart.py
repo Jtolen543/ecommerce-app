@@ -1,4 +1,4 @@
-from .models import Product
+from core.models import Product
 
 
 class ShoppingCart:

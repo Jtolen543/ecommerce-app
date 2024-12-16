@@ -2,9 +2,7 @@ from django import forms
 from django.core.validators import RegexValidator
 import datetime
 from .countries import country_tuples, country_dict
-from .models import Location, User
-from crispy_forms.helper import FormHelper
-from crispy_forms.layout import Submit
+from core.models import Location
 
 
 class RegisterForm(forms.Form):

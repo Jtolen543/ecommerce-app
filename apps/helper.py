@@ -1,6 +1,6 @@
 import os
 from django.conf import settings
-from .models import Location, UserLocation, Category, ProductOrders, Product, Order
+from core.models import Location, UserLocation, Category, Order
 import stripe
 import random
 
