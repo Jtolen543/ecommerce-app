@@ -598,7 +598,8 @@ def payment_success(request, pi_id):
                 )
                 location.save()
             else:
-                location = Location.objects.get(address=payment.shipping.address.line1)
+                location = Location.objects.get(address=payment.shipping.address.line1,
+                                                details=payment.shipping.address.line2)
 
             order = Order(
                 order_id=order_num,

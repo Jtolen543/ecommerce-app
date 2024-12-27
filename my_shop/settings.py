@@ -31,7 +31,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get("DJANGO_FORM_KEY")
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["django-ecommerce-app-c7d08b840bfc.herokuapp.com", "127.0.0.1"]
 
